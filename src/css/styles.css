@@ -12,14 +12,6 @@
 @import url('./charitableFunds.css');
 
 :root {
-  font-family: DM Sans, Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

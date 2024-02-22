@@ -1,15 +1,16 @@
 body {
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  color: var(--text-color);
+  color: var(--dark-color);
   background-color: var(--white-color);
   line-height: 1.28;
   font-style: normal;
   font-size: 14px;
   letter-spacing: -0.04em;
-  height: 100%;
 }
 body.dark {
   background-color: var(--gray-color);
+  color: var(--white-color);
 }
 .container {
   max-width: 375px;
@@ -32,17 +33,12 @@ body.dark {
 }
 
 .title {
-  color: var(--dark-color);
   font-weight: 700;
   font-size: 32px;
-  font-weight: 500;
   line-height: 1.19;
 }
 .title span {
   color: var(--violet-color);
-}
-.dark .title {
-  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
