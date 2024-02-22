@@ -1,4 +1,6 @@
 import axios from "axios";
+import { toastError } from "../components/toast";
+
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 
@@ -12,7 +14,7 @@ export const instance = axios.create({
  
   // Додаткова обробка помилки
   function handleAxiosError(error) {
-    console.error('Помилка виконання запиту:', error);
+    toastError(error);
   };
 
 

@@ -24,7 +24,7 @@ export function getSelectedCategory(category){
 
 // функція яка повертає книгу за ID
 export function getById(bookId){
-  return instance.get(`/books/${bookId}`)
+  return instance.get(`/books/top-books/${bookId}`)
 };
 
 
