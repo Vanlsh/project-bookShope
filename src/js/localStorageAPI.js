@@ -1,24 +1,6 @@
 function setToLocalStorage(key, value) {
-  try {
-    localStorage.setItem(key, JSON.stringify(value));
-    console.log(
-      `The data with the key: "${key}" was successfully written to Local Storage`
-    );
-  } catch (e) {
-    consol.error(
-      `An error occured when trying to write data to Local Storage: ${e}`
-    );
-  }
+  localStorage.setItem(key, JSON.stringify(value));
 }
-
-const name = 'Oleksandr';
-const detailInfo = {
-  age: 34,
-  jobPosition: 'manager',
-  email: 'oleks@gmail.com',
-};
-
-setToLocalStorage(name, detailInfo);
 
 function getFromLocalStorage(key) {
   try {
@@ -37,5 +19,3 @@ function getFromLocalStorage(key) {
     return null;
   }
 }
-
-console.log('The data from Local Storage:', getFromLocalStorage(name));
