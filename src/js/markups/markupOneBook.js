@@ -4,7 +4,7 @@ export function markupBookCard(book) {
 <li class="books-item" data-id=${id}>
 <div>
  <img class="book-image" src="${image}" alt="${author} ${title}"/>
-          <p class="book-image-message-text">Quick view</p>
+          <p class="book-image-message-text">QUICK VIEW</p>
 </div>
         <h2 class="book-title">${title}</h2>
         <p class="book-author">${author}</p>

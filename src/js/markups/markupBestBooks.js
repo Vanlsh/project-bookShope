@@ -1,4 +1,4 @@
-export function createBestSellersBooksMarkup(list_name, books) {
+export function markupBestSellersBooks(list_name, books) {
   const categoryItem = document.createElement('li');
   categoryItem.classList.toggle('category-books-item');
   const categoryTitle = document.createElement('h3');
@@ -9,5 +9,5 @@ export function createBestSellersBooksMarkup(list_name, books) {
   const categoryButton = document.createElement('button');
   categoryButton.classList.toggle('category-button');
   categoryButton.setAttribute('type', 'button');
-  categoryButton.textContent = 'see more';
+  categoryButton.textContent = 'SEE MORE';
 }
