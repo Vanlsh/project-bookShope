@@ -2,7 +2,7 @@ import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
 
 import { refsLS } from './keyConstsLS';
 
-function removeBookFromCart(bookId) {
+export function removeBookFromCart(bookId) {
   //Get arr from Local Storage
   let booksInCart = getFromLocalStorage(refsLS.booksInCart);
 
