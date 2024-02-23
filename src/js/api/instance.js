@@ -15,7 +15,7 @@ export const instance = axios.create({
   // Додаткова обробка помилки
   function handleAxiosError(error) {
     toastError(error.message);
-    return error;
+    return null;
   };
 
 
