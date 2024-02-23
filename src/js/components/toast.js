@@ -22,3 +22,12 @@ export function toastError(message) {
     ...toastOptions,
   });
 }
+
+export function toastSuccess(message) {
+  iziToast.show({
+    message,
+    backgroundColor: '#3db919',
+    progressBarColor: '#FFE0AC',
+    ...toastOptions,
+  });
+}
