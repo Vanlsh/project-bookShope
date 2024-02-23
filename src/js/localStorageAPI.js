@@ -1,8 +1,8 @@
-function setToLocalStorage(key, value) {
+export function setToLocalStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-function getFromLocalStorage(key) {
+export function getFromLocalStorage(key) {
   try {
     const data = localStorage.getItem(key);
     if (data === null) {
