@@ -1,11 +1,9 @@
 import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
 import { refsLS } from './keyConstsLS';
 
-let booksInCart = refsLS.booksInCart;
-
 function addBookToCart(book) {
   // get array from Local Storage
-  booksInCart = getFromLocalStorage('booksInCart');
+  let booksInCart = getFromLocalStorage(refsLS.booksInCart);
   //if local Storage doesn`t have arraay, create new arr with obj "book"
   if (booksInCart === null) {
     booksInCart = [book];
@@ -22,6 +20,6 @@ function addBookToCart(book) {
     }
   }
   //Save update arr in Local Storage
-  setToLocalStorage('booksInCart', booksInCart);
+  setToLocalStorage(refsLS.booksInCart, booksInCart);
   console.log('The book was successfully written to Cart'); // insted of this notification in console we can use Izi Toast
 }
