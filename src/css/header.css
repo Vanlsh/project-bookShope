@@ -1,39 +1,25 @@
-.header-container {
-    min-height: 64px;
-    min-width: 375px;
-    overflow: hidden;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 16px;
-    border: 1.50px solid #111;
-    border-radius: 0 0 8px 8px;
-  }
-  
-  .header-container a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #111;
-  }
-  
-  .navigation {
+.header-logo {
+display: flex;
+align-items: center;
+color: #111;
+}
+.navigation {
     list-style: none;
     display: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .navigation li {
+}
+
+.navigation li {
     margin-right: 20px;
-  }
-  
-  .navigation a {
+}
+
+.navigation a {
     text-decoration: none;
     color: #111;
-  }
-  
-  .header-switch {
+}
+
+.header-switch {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -92,7 +78,7 @@
   background-position: center;
   border: none;
   background-color: inherit;
-  display: none;
+  display: flex;
 }
 
 .header-x-button:hover,
@@ -101,3 +87,37 @@
   background-image: url(../img/Icon_x_hover.svg);
 }
 
+.header-container {
+    height: 64px;
+    min-width: 375px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 1.50px solid #111;
+    border-radius: 0 0 8px 8px;
+}
+.header-logo {
+}
+.header-boohshelf-logo {
+}
+.header-navigation {
+    display: none;
+}
+.header-navigation-list {
+}
+.header-navigation-item {
+}
+.header-switch {
+}
+.header-input {
+}
+.header-slider {
+}
+.header-x-button {
+}
+.header-open-button {
+}
