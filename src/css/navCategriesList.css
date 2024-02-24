@@ -14,13 +14,11 @@
   border: none;
   background-color: transparent;
   outline: none;
-  font-family: DM Sans;
   font-size: 16px;
-  /* font-weight: 400; */
   line-height: 18px;
   letter-spacing: -0.02em;
   text-align: left;
-  /* color: var(--main-fount-color); */
+  color: var(--main-fount-color);
   transition: all 0.3s ease;
 }
 .shop-navigation-list > li > button:hover {
@@ -28,10 +26,23 @@
   color: var(--hover-color);
   text-transform: uppercase;
 }
-.shop-navigation-list > li > .btn-item-category-dark {
-  color: #ffffff;
+
+@media screen and (min-width: 768px) {
+  .shop-navigation-list {
+    max-height: 472px;
+    max-width: 337px;
+  }
+  .shop-navigation-list > li {
+    margin-bottom: 32px;
+  }
+  .shop-navigation-list > li > button {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-.shop-navigation-list > li > .btn-item-category-dark:hover {
-  color: var(--hover-color);
+@media screen and (min-width: 1422px) {
+  .shop-navigation-list {
+    max-width: 356px;
+  }
 }
