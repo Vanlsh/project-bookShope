@@ -1,6 +1,7 @@
-import { getCategoryList } from './api/books.js';
-import { refs } from './refs.js';
-import { markupNavCatList } from '../js/markups/markupNavCategories.js';
+import { getCategoryList } from '../api/books.js';
+import { refs } from '../refs.js';
+import { markupNavCatList } from '../markups/markupNavCategories.js';
+
 //Function for added markup to the ul in th shop.html file
 export async function renderNavCategoryList() {
   try {
