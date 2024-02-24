@@ -1,5 +1,6 @@
 import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
 import { refsLS } from './keyConstsLS';
+import { toastSuccess } from './components/toast';
 
 export function addBookToCart(book) {
   // get array from Local Storage
@@ -21,5 +22,5 @@ export function addBookToCart(book) {
   }
   //Save update arr in Local Storage
   setToLocalStorage(refsLS.booksInCart, booksInCart);
-  console.log('The book was successfully written to Cart'); // insted of this notification in console we can use Izi Toast
+  toastSuccess('The book was successfully written to Cart!');
 }
