@@ -1,1 +1,1 @@
-
+import './js/markups/markupListCategory';

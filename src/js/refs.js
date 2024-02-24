@@ -1,1 +1,3 @@
-export const refs = {};
+export const refs = {
+  ulCategoryContainer: document.querySelector('#listContainer'),
+};
