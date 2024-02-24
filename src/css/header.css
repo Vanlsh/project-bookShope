@@ -1,2 +1,97 @@
-.header {
+.is-open {
 }
+
+.burger-wraper {
+  background: radial-gradient(
+    189.32% 190.93% at 59.76% -23.42%,
+    rgb(79, 46, 232) 18.02733987569809%,
+    rgb(255, 255, 255) 100%
+  );
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.burger-header {
+  border: 1.5px solid #111;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.burger-body {
+  width: 100%;
+  height: 100%;
+}
+
+.burger-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.burger-switch .burger-input {
+  display: none;
+}
+
+.burger-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.burger-slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.burger-input:checked + .burger-slider {
+  background: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
+}
+
+.burger-input:focus + .burger-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.burger-input:checked + .burger-slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.burger-x-button {
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/Icon_x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: inherit;
+}
+
+.burger-x-button:hover,
+.burger-x-button:focus,
+.burger-x-button:active {
+  background-image: url(../img/Icon_x_hover.svg);
+}
+
