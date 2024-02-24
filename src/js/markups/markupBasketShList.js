@@ -37,27 +37,16 @@ function markupBasketItem({
     <p class="author-basket-item">${author}</p>
      <ul class="links-shop-list">
      <li class="link-shop-item">
-     <a class="apple-book-link"></a>
+     <a class="amazon-link" href="https://www.amazon.com/" target="_blank" rel="noopener">
+     <img class="img-amazon" src="/img/amazon.png" alt="amazon"></img></a>
      </li>
      <li class="link-shop-item">
-      <a class="amazon-link"></a>
+      <a class="apple-book-link" href="https://www.apple.com/ua/apple-books/" target="_blank" rel="noopener">
+      <img class="img-apple-books" src="/img/apple-books.png" alt="apple-books"></img>
+      </a>
       </li>
      </ul>
      </div>
      </div>
     </li>`;
 }
-
-const titleParagraphs = document.querySelectorAll('.title-basket-item');
-titleParagraphs.forEach(paragraph => {
-  const text = paragraph.textContent;
-  const lineHeight = parseInt(getComputedStyle(paragraph).lineHeight);
-  const maxHeight = lineHeight * 1;
-  if (paragraph.offsetHeight > maxHeight) {
-    let index = Math.floor(maxHeight / lineHeight);
-    while (paragraph.offsetHeight > maxHeight) {
-      index--;
-      paragraph.textContent = text.split(' ').slice(0, index).join(' ') + '...';
-    }
-  }
-});

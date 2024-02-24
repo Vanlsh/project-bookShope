@@ -16,6 +16,7 @@
   border-radius: 16px;
   padding: 14px;
   display: flex;
+  background-color: var(--item-background-color);
 }
 
 .basket-item-img {
@@ -45,11 +46,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: var(--title-color);
-  /* overflow: hidden;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
 }
 
 .category-basket-item {
@@ -67,6 +68,11 @@
   background-color: var(--violet-color);
   border: none;
 }
+
+.delete-basket-item-btn:hover {
+  filter: var(--hover-shadow);
+}
+
 .trash-btn-icon {
   display: flex;
   justify-content: center;
@@ -89,4 +95,39 @@
 
 .last-item-part {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  color: var(--light-gray-color);
+}
+
+.links-shop-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.img-amazon {
+  filter: var(--filter-color);
+  mix-blend-mode: luminosity;
+  width: 32px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.img-apple-books {
+  mix-blend-mode: luminosity;
+  filter: grayscale(100%);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.img-amazon:hover,
+.img-apple-books:hover {
+  filter: var(--hover-shadow);
 }
