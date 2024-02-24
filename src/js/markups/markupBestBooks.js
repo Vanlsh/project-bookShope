@@ -15,6 +15,9 @@ export function markupBestSellersBooks({ list_name, books }) {
   categoryList.innerHTML = books.map(markupBookCard).join('');
   categoryList.addEventListener('click', e => console.log('click'));
 
+  const categoryDiv = document.createElement('div');
+  categoryDiv.classList.add('category-div');
+
   const categoryButton = document.createElement('button');
   categoryButton.classList.add('category-button');
   categoryButton.setAttribute('type', 'button');
@@ -24,7 +27,8 @@ export function markupBestSellersBooks({ list_name, books }) {
 
   categoryItem.append(categoryTitle);
   categoryItem.append(categoryList);
-  categoryItem.append(categoryButton);
+  categoryItem.append(categoryDiv);
+  categoryDiv.append(categoryButton);
 
   return categoryItem;
 }
