@@ -1,8 +1,6 @@
 import { markupBookCard } from './markupOneBook';
 
 export function markupBestSellersBooks({ list_name, books }) {
-  console.log(books);
-
   const categoryItem = document.createElement('li');
   categoryItem.classList.add('category-books-item');
 
@@ -23,7 +21,7 @@ export function markupBestSellersBooks({ list_name, books }) {
   categoryButton.setAttribute('type', 'button');
   categoryButton.setAttribute('data-category', list_name);
   categoryButton.textContent = 'SEE MORE';
-  categoryButton.addEventListener('click', e => console.log(e.target));
+  categoryButton.addEventListener('click', e => console.log(e.target.dataset));
 
   categoryItem.append(categoryTitle);
   categoryItem.append(categoryList);

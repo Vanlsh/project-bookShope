@@ -2,10 +2,13 @@
   --gold-color: #eac645;
   --violet-color: #4f2ee8;
   --gray-color: #202024;
+  --light-gray-color: #b4afaf;
   --dark-color: #111111;
   --white-color: #ffffff;
   --white-background-color: #f6f6f6;
   --border-color: rgba(79, 46, 232, 0.4);
+  --box-shadow-color: rgba(0, 0, 0, 0.25);
+  --black-color: #000;
 }
 .dark {
   --background-color: var(--gray-color);
