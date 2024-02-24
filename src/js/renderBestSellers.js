@@ -4,8 +4,16 @@ import { refs } from './refs';
 
 async function renderBestSellerBooks() {
   const bestsellers = await getTopBooks();
-  const arr = bestsellers.map(markupBestSellersBooks);
-  refs.gallery.append(...arr);
-  console.log(arr);
+
+  const bestsellersArr = bestsellers.map(markupBestSellersBooks);
+  const bestsellersList = document.createElement('ul');
+  bestsellersList.classList.add('category-books-list');
+  const bestsellersTitle = document.createElement('h1');
+
+  bestsellersList.append(...bestsellersArr);
+  bestsellersTitle.textContent = 'Best Sellers Books';
+
+  refs.gallery.append(bestsellersTitle);
+  refs.gallery.append(bestsellersList);
 }
 renderBestSellerBooks();

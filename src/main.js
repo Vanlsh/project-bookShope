@@ -1,1 +1,1 @@
-import './js/renderBestSeller.js'
+import './js/renderBestSellers.js';
