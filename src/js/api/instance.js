@@ -4,7 +4,7 @@ import { toastError } from "../components/toast";
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 
-const TIMEOUT = 1000 * 60;
+const TIMEOUT = 1000 * 30;
 
 export const instance = axios.create({
     baseURL: BASE_URL,
