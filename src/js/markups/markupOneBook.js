@@ -2,7 +2,7 @@ export function markupBookCard(book) {
   const { _id: id, book_image: image, title, author } = book;
   return `
 <li class="books-item" data-id=${id}>
-<div>
+<div class="book-wrapper">
  <img class="book-image" src="${image}" alt="${author} ${title}"/>
           <p class="book-image-message-text">QUICK VIEW</p>
 </div>
