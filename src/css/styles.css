@@ -9,6 +9,7 @@
 @import url('./header.css');
 @import url('./gallery.css');
 @import url('./charitableFunds.css');
+@import url('./basket.css');
 
 :root {
   font-synthesis: none;
