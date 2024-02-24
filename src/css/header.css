@@ -1,45 +1,50 @@
-.is-open {
-}
+.header-container {
+    min-height: 64px;
+    min-width: 375px;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 1.50px solid #111;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .header-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #111;
+  }
+  
+  .header-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
 
-.burger-wraper {
-  background: radial-gradient(
-    189.32% 190.93% at 59.76% -23.42%,
-    rgb(79, 46, 232) 18.02733987569809%,
-    rgb(255, 255, 255) 100%
-  );
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.burger-header {
-  border: 1.5px solid #111;
-  border-radius: 0 0 8px 8px;
-  width: 100%;
-  height: 64px;
-  background: #fff;
-  padding: 16px;
-  display: flex;
-  flex-direction: row;
-}
-.burger-body {
-  width: 100%;
-  height: 100%;
-}
-
-.burger-switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-}
-
-.burger-switch .burger-input {
+.header-switch .header-input {
   display: none;
 }
 
-.burger-slider {
+.header-slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -52,7 +57,7 @@
   border-radius: 34px;
 }
 
-.burger-slider:before {
+.header-slider:before {
   position: absolute;
   content: '';
   height: 20px;
@@ -65,21 +70,21 @@
   border-radius: 50%;
 }
 
-.burger-input:checked + .burger-slider {
+.header-input:checked + .header-slider {
   background: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
 }
 
-.burger-input:focus + .burger-slider {
+.header-input:focus + .header-slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-.burger-input:checked + .burger-slider:before {
+.header-input:checked + .header-slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
 }
 
-.burger-x-button {
+.header-x-button {
   width: 28px;
   height: 28px;
   background-image: url(../img/Icon_x.svg);
@@ -87,11 +92,12 @@
   background-position: center;
   border: none;
   background-color: inherit;
+  display: none;
 }
 
-.burger-x-button:hover,
-.burger-x-button:focus,
-.burger-x-button:active {
+.header-x-button:hover,
+.header-x-button:focus,
+.header-x-button:active {
   background-image: url(../img/Icon_x_hover.svg);
 }
 
