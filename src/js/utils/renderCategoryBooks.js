@@ -1,27 +1,31 @@
 import { getSelectedCategory } from '../api/books';
 import { toastError } from '../components/toast';
 import { markupBookCard } from '../markups/markupOneBook';
-
-const gallery = document.querySelector('.js-gallery');
+import { refs } from '../refs';
+import { markupTitle } from '../markups/markupTitle';
 
 export async function renderCategory(category) {
+  refs.gallery.innerHTML = '';
   try {
     const data = await getSelectedCategory(category);
+
+    const titleElement = markupTitle(category);
+    refs.gallery.appendChild(titleElement);
+
+    // Створюємо елемент <ul> та додаємо його до галереї
+    const ul = document.createElement('ul');
+    ul.classList.add('selected-category-list');
+    refs.gallery.appendChild(ul);
 
     // Створюємо розмітку кожної книги з використанням map
     const booksMarkup = data.map(book => markupBookCard(book)).join('');
 
-    // Додаємо розмітку до елементу DOM з класом 'js-gallery'
-    gallery.innerHTML = booksMarkup;
+    // Додаємо розмітку до елементу <ul>
+    ul.innerHTML = booksMarkup;
 
-    const bookItems = document.querySelectorAll('.books-item');
-    bookItems.forEach(item => {
-      //handleBookClick колбек функція для відкриття модалки,
-      // її ще не існує тому в цьому блоці помилка
-      item.addEventListener('click', handleBookClick);
-    });
+    ul.addEventListener('click', handleModalClick);
   } catch (error) {
     // Обробка помилок, якщо вони виникають під час виконання блоку try
     toastError('Error rendering category. Please try again later.');
   }
-};
+}
