@@ -1,4 +1,3 @@
+const gallery = document.querySelector('.js-gallery');
 
-const gallery = document.querySelector('.gallery')
-
-export const refs = {gallery}
+export const refs = { gallery };
