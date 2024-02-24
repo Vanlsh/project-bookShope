@@ -1,1 +1,2 @@
-import './js/markups/markupListCategory';
+import './js/markups/markupNavCategories';
+import './js/renderNavCategoriesList';

@@ -1,20 +1,37 @@
 .shop-navigation-list {
+  max-height: 228px;
+  overflow-y: auto;
   max-width: 335px;
-  height: 228p;
 }
 .shop-navigation-list > li {
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.02em;
-  text-align: left;
-  color: #111111;
   margin-bottom: 24px;
+}
+.shop-navigation-list > li:last-child {
+  margin-bottom: 0;
 }
 
 .shop-navigation-list > li > button {
   border: none;
   background-color: transparent;
   outline: none;
+  font-family: DM Sans;
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  /* color: var(--main-fount-color); */
+  transition: all 0.3s ease;
+}
+.shop-navigation-list > li > button:hover {
+  font-weight: 700;
+  color: var(--hover-color);
+  text-transform: uppercase;
+}
+.shop-navigation-list > li > .btn-item-category-dark {
+  color: #ffffff;
+}
+
+.shop-navigation-list > li > .btn-item-category-dark:hover {
+  color: var(--hover-color);
 }
