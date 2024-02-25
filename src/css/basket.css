@@ -1,0 +1,206 @@
+.basket-container {
+  margin-top: 40px;
+  display: flex;
+}
+.basket-container .charity-slider {
+  display: none;
+}
+
+.background-container.none {
+  display: none;
+}
+
+.background-container {
+  margin-top: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.empty-text {
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--empty-color);
+}
+
+.shList-container {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shList-title {
+  margin-bottom: 40px;
+}
+
+.basket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.basket-item {
+  width: 335px;
+  height: 170px;
+  border: 2px solid;
+  border-color: var(--border-color);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  background-color: var(--item-background-color);
+}
+
+.basket-item-img {
+  width: 100px;
+  height: 142px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin-right: 14px;
+}
+
+.basket-item-info {
+  width: 100%;
+}
+
+.first-item-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.title-category-container {
+  gap: 4px;
+}
+
+.title-basket-item {
+  font-weight: 700px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--title-color);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.category-basket-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--light-gray-color);
+}
+
+.delete-basket-item-btn {
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  background-color: var(--violet-color);
+  border: none;
+}
+
+.delete-basket-item-btn:hover {
+  filter: var(--hover-shadow);
+}
+
+.trash-btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descr-basket-item {
+  width: 193px;
+  height: 53px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  line-height: 1.29;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.last-item-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  color: var(--light-gray-color);
+}
+
+@media screen and (min-width: 768px) {
+  .shList-container {
+    max-width: 768px;
+  }
+
+  .empty-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .basket-item {
+    width: 704px;
+    height: 213px;
+    padding: 24px;
+  }
+
+  .basket-item-img {
+    width: 116px;
+    height: 165px;
+    margin-right: 24px;
+  }
+
+  .first-item-part {
+    margin-bottom: 14px;
+  }
+
+  .delete-basket-item-btn {
+    height: 34px;
+    width: 34px;
+    padding: 8px;
+  }
+
+  .descr-basket-item {
+    width: 508px;
+    margin-bottom: 33px;
+  }
+
+  .author-basket-item {
+    margin-top: 15px;
+  }
+
+  .trash-btn-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 1422px) {
+  .shList-container {
+    margin-left: 40px;
+    max-width: 1026px;
+  }
+
+  .basket-container .charity-slider {
+    display: flex;
+  }
+
+  .basket-item {
+    width: 996px;
+  }
+
+  .descr-basket-item {
+    width: 808px;
+  }
+}
