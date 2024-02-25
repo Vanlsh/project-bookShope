@@ -145,10 +145,6 @@ text-align: center;
     display: flex;
     gap: 40px;
   }
-  .header-open-icon,
-.header-close-icon {
-  display: none;
-}
 }
 
 
