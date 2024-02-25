@@ -16,4 +16,3 @@ async function renderBestSellerBooks() {
   refs.gallery.append(markupTitle('Best Sellers Books'));
   refs.gallery.append(bestsellersList);
 }
-renderBestSellerBooks();
