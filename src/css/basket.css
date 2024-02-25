@@ -29,6 +29,7 @@
 }
 
 .basket-item-info {
+  width: 100%;
 }
 
 .first-item-part {
@@ -81,7 +82,7 @@
 
 .descr-basket-item {
   width: 193px;
-  height: 54px;
+  height: 53px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -130,4 +131,28 @@
 .img-amazon:hover,
 .img-apple-books:hover {
   filter: var(--hover-shadow);
+}
+
+@media screen and (min-width: 768px) {
+  .basket-item {
+    width: 704px;
+    height: 213px;
+    padding: 24px;
+  }
+
+  .basket-item-img {
+    width: 116px;
+    height: 165px;
+    margin-right: 24px;
+  }
+
+  .delete-basket-item-btn {
+    height: 34px;
+    width: 34px;
+  }
+
+  .descr-basket-item {
+    width: 508px;
+    margin-bottom: 48px;
+  }
 }
