@@ -3,25 +3,23 @@ import { markupBasketItem } from './markups/markupBasketShList';
 import { addBookToCart } from './addBookToCart';
 import { refsLS } from './keyConstsLS';
 import { getFromLocalStorage } from './localStorageAPI';
+import { refsShoppingList } from './refsShoppingList';
 
-const basketShoppingList = document.querySelector('.basket-list');
-const start = document.querySelector('.test');
-start.addEventListener('click', renderBasketItem);
+refsShoppingList.start.addEventListener('click', renderBasketItem);
 
 export function renderBasketItem() {
-  basketShoppingList.innerHTML = '';
+  refsShoppingList.basketShoppingList.innerHTML = '';
 
   let data = getFromLocalStorage(refsLS.booksInCart);
   console.log(data);
-  const emptyCardContainer = document.querySelector('.js-background-container');
   const isCardEmpty = !data || !data.length;
   if (isCardEmpty) {
-    emptyCardContainer.classList.remove('none');
+    refsShoppingList.emptyCardContainer.classList.remove('none');
     return;
   }
 
   const books = data.map(markupBasketItem).join('');
-  basketShoppingList.innerHTML = books;
+  refsShoppingList.basketShoppingList.innerHTML = books;
 }
 
 async function foo() {
@@ -31,4 +29,4 @@ async function foo() {
   });
 }
 
-// foo();
+foo();
