@@ -13,6 +13,10 @@
   width: 100%;
   overflow: hidden;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease;
 }
 
 .burger-body {
@@ -62,4 +66,14 @@
   width: 20px;
   height: 20px;
   fill: var(--white-color);
+}
+
+.is-closed {
+  right: -100%;
+  display: none;
+}
+
+.is-open {
+  display: flex;
+  right: 0;
 }
