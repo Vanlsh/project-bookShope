@@ -58,10 +58,21 @@
     border: none;
     transition: transform 0.3s ease;
     transform: rotate(0deg);
+    transition: background-color 300ms linear;
 }
+
+.charity-btn:hover {
+    background-color: var(--violet-color);
+}
+
 .charity-btn-icon {
     transform: rotate(-90deg);
     fill: var(--violet-color);
+    transition: fill 300ms linear;
+}
+
+.charity-btn:hover .charity-btn-icon {
+    fill: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
