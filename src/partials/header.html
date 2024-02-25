@@ -1,1 +1,40 @@
-<header class="header container"></header>
+<header class="header-container">
+  <nav class="header-navigation">
+    <a class="header-logo" href="/">
+      <img
+        class="header-boohshelf-logo"
+        src="../img/logo.svg"
+        alt="boohshelf_logo"
+      />
+      Bookshelf
+    </a>
+    <ul class="header-navigation-list">
+      <li class="header-navigation-item"><a href="/">home</a></li>
+      <li class="header-navigation-item">
+        <a href="/shopListPage.html"
+          >shopping list
+          <svg class="header-cart-icon" width="20" height="20">
+            <use href="../img/icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-btns-wrapper">
+    <label class="header-switch"
+      ><input type="checkbox" class="header-input" /><span
+        class="header-slider"
+      ></span
+    ></label>
+    <button class="header-close-button" type="button">
+      <svg class="header-close-icon" width="28" height="28">
+        <use href="../img/icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <button class="header-open-button" type="button">
+      <svg class="header-open-icon" width="28" height="28">
+        <use href="../img/icons.svg#icon-align-left"></use>
+      </svg>
+    </button>
+  </div>
+</header>
