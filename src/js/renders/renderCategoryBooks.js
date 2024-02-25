@@ -3,6 +3,7 @@ import { toastError } from '../components/toast';
 import { markupBookCard } from '../markups/markupOneBook';
 import { refs } from '../refs';
 import { markupTitle } from '../markups/markupTitle';
+import { onCardClick } from '../events/onCardClick';
 
 export async function renderCategory(category) {
   refs.gallery.innerHTML = '';
@@ -23,7 +24,7 @@ export async function renderCategory(category) {
     // Додаємо розмітку до елементу <ul>
     ul.innerHTML = booksMarkup;
 
-    ul.addEventListener('click',() => console.log('Hello World'));
+    ul.addEventListener('click', onCardClick);
   } catch (error) {
     // Обробка помилок, якщо вони виникають під час виконання блоку try
     toastError('Error rendering category. Please try again later.');
