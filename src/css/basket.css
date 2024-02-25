@@ -27,8 +27,7 @@
 }
 
 .shList-container {
-  min-height: 752px;
-  min-width: 375px;
+  max-width: 375px;
   display: flex;
   flex-direction: column;
 }
@@ -142,8 +141,7 @@
 
 @media screen and (min-width: 768px) {
   .shList-container {
-    min-height: 935px;
-    min-width: 768px;
+    max-width: 768px;
   }
 
   .empty-text {
@@ -191,8 +189,7 @@
 @media screen and (min-width: 1422px) {
   .shList-container {
     margin-left: 40px;
-    min-height: 935px;
-    min-width: 1026px;
+    max-width: 1026px;
   }
 
   .basket-container .charity-slider {

@@ -1,11 +1,7 @@
-import { getSelectedCategory } from './api/books';
 import { markupBasketItem } from './markups/markupBasketShList';
-import { addBookToCart } from './addBookToCart';
 import { refsLS } from './keyConstsLS';
 import { getFromLocalStorage } from './localStorageAPI';
 import { refsShoppingList } from './refsShoppingList';
-
-refsShoppingList.start.addEventListener('click', renderBasketItem);
 
 export function renderBasketItem() {
   refsShoppingList.basketShoppingList.innerHTML = '';
@@ -21,12 +17,3 @@ export function renderBasketItem() {
   const books = data.map(markupBasketItem).join('');
   refsShoppingList.basketShoppingList.innerHTML = books;
 }
-
-async function foo() {
-  let data = await getSelectedCategory('Paperback Nonfiction');
-  data.forEach(book => {
-    addBookToCart(book);
-  });
-}
-
-foo();
