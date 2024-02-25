@@ -1,7 +1,7 @@
 .shop-navigation-list {
-  max-height: 228px;
+  height: 228px;
   overflow-y: auto;
-  max-width: 335px;
+  width: 335px;
 }
 .shop-navigation-list > li {
   margin-bottom: 24px;
@@ -21,6 +21,12 @@
   color: var(--main-fount-color);
   transition: all 0.3s ease;
 }
+
+.shop-navigation-list > li .active {
+  font-weight: 700;
+  color: var(--hover-color);
+  text-transform: uppercase;
+}
 .shop-navigation-list > li > button:hover {
   font-weight: 700;
   color: var(--hover-color);
@@ -29,8 +35,8 @@
 
 @media screen and (min-width: 768px) {
   .shop-navigation-list {
-    max-height: 472px;
-    max-width: 337px;
+    height: 472px;
+    width: 337px;
   }
   .shop-navigation-list > li {
     margin-bottom: 32px;
@@ -43,6 +49,6 @@
 
 @media screen and (min-width: 1422px) {
   .shop-navigation-list {
-    max-width: 356px;
+    width: 356px;
   }
 }

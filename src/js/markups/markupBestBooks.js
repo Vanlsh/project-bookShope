@@ -1,4 +1,6 @@
 import { markupBookCard } from './markupOneBook';
+import { onSeeMore } from '../events/onSeeMore';
+import { onCardClick } from '../events/onCardClick';
 
 export function markupBestSellersBooks({ list_name, books }) {
   const categoryItem = document.createElement('li');
@@ -11,7 +13,7 @@ export function markupBestSellersBooks({ list_name, books }) {
   const categoryList = document.createElement('ul');
   categoryList.classList.add('category-list');
   categoryList.innerHTML = books.map(markupBookCard).join('');
-  categoryList.addEventListener('click', e => console.log('click'));
+  categoryList.addEventListener('click', onCardClick);
 
   const categoryDiv = document.createElement('div');
   categoryDiv.classList.add('category-div');
@@ -21,7 +23,7 @@ export function markupBestSellersBooks({ list_name, books }) {
   categoryButton.setAttribute('type', 'button');
   categoryButton.setAttribute('data-category', list_name);
   categoryButton.textContent = 'SEE MORE';
-  categoryButton.addEventListener('click', e => console.log(e.target.dataset));
+  categoryButton.addEventListener('click', onSeeMore);
 
   categoryItem.append(categoryTitle);
   categoryItem.append(categoryList);

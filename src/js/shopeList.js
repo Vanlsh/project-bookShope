@@ -1,3 +1,5 @@
 // Логіка для другої сторінки
 
-import '../js/renderBasketShList';
+import { renderBasketItem } from './renders/renderBasketShList';
+
+renderBasketItem();
