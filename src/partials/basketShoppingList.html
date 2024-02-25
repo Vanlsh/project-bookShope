@@ -1,5 +1,27 @@
 <button class="test">start</button>
+<div class="shList-container shList-image">
+  <h1 class="title shList-title">Shopping <span>List</span></h1>
+  <div class="background-container none js-background-container">
+    <p class="empty-text">
+      This page is empty, add some books and <br />
+      proceed to order.
+    </p>
+    <picture>
+      <source
+        srcset="/img/books_mob.jpg.png"
+        width="265"
+        height="198"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/img/books_tab.jpg.png"
+        width="322"
+        height="241"
+        media="(min-width: 768px)"
+      />
+      <img src="/img/books_tab.jpg.png" alt="Shopping List is empty" />
+    </picture>
+  </div>
 
-<h1 class="title shList-title">Shopping <span>List</span></h1>
-
-<ul class="basket-list"></ul>
+  <ul class="basket-list"></ul>
+</div>
