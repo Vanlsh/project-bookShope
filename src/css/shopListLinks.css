@@ -1,0 +1,42 @@
+.links-shop-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.img-amazon {
+  filter: var(--filter-color);
+  mix-blend-mode: luminosity;
+  width: 32px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.img-apple-books {
+  mix-blend-mode: luminosity;
+  filter: grayscale(100%);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.img-amazon:hover,
+.img-apple-books:hover {
+  filter: var(--hover-shadow);
+}
+
+@media screen and (min-width: 768px) {
+  .links-shop-list {
+    gap: 16px;
+  }
+
+  .img-amazon {
+    width: 48px;
+    height: 15px;
+  }
+  .img-apple-books {
+    width: 28px;
+    height: 28px;
+  }
+}
