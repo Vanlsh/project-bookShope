@@ -156,10 +156,14 @@
   .category-button {
     margin-top: 20px;
   }
+  .shop-container {
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1422px) {
   .shop-container {
+    padding-bottom: 72px;
     display: flex;
     gap: 40px;
   }
