@@ -1,5 +1,5 @@
-import { getSelectedCategory } from './api/books';
-import { markupBasketItem } from './markups/markupBasketShList';
+import { getSelectedCategory } from '../api/books';
+import { markupBasketItem } from '../markups/markupBasketShList';
 
 const basketShoppingList = document.querySelector('.basket-list');
 const start = document.querySelector('.test');
