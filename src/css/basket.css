@@ -146,13 +146,50 @@
     margin-right: 24px;
   }
 
+  .first-item-part {
+    margin-bottom: 14px;
+  }
+
   .delete-basket-item-btn {
     height: 34px;
     width: 34px;
+    padding: 8px;
   }
 
   .descr-basket-item {
     width: 508px;
-    margin-bottom: 48px;
+    margin-bottom: 33px;
+  }
+
+  .author-basket-item {
+    margin-top: 15px;
+  }
+
+  .trash-btn-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .links-shop-list {
+    gap: 16px;
+  }
+
+  .img-amazon {
+    width: 48px;
+    height: 15px;
+  }
+  .img-apple-books {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1422px) {
+  .basket-item {
+    width: 996px;
+  }
+
+  .descr-basket-item {
+    width: 808px;
   }
 }
