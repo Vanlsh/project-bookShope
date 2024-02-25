@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
     menuWrapper.classList.replace('menu-is-open', 'menu-is-closed');
   });
 
-  const menuLinks = document.querySelectorAll('.burger-list a');
+    const menuLinks = document.querySelectorAll('.burger-list a');
+    
+    
   menuLinks.forEach(link => {
     link.addEventListener('click', function() {
       menuWrapper.classList.remove('menu-is-open');
