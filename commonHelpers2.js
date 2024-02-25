@@ -1,14 +1,14 @@
-import{b as l}from"./assets/books-eed7060a.js";import"./assets/vendor-8cce9181.js";function c(s){const t=s.find(a=>a.name==="Amazon").url,e=s.find(a=>a.name==="Apple Books").url;return`
+import"./assets/charitableFunds-7385a04c.js";function l(t){const e=t.find(s=>s.name==="Amazon").url,a=t.find(s=>s.name==="Apple Books").url;return`
     <ul class="links-shop-list">
        <li class="link-shop-item">
-         <a class="amazon-link" href="${t}" target="_blank" rel="noopener">
+         <a class="amazon-link" href="${e}" target="_blank" rel="noopener">
            <img class="img-amazon" src="/img/amazon.png" alt="amazon"></img>
          </a>
        </li>
        <li class="link-shop-item">
          <a
            class="apple-book-link"
-           href="${e}"
+           href="${a}"
            target="_blank"
            rel="noopener"
          >
@@ -19,25 +19,25 @@ import{b as l}from"./assets/books-eed7060a.js";import"./assets/vendor-8cce9181.j
            ></img>
          </a>
        </li>
-     </ul>`}function r({id:s,book_image:t,title:e,list_name:a,description:i,author:o,buy_links:n}){return`
+     </ul>`}function c({id:t,book_image:e,title:a,list_name:s,description:n,author:i,buy_links:r}){return`
     <li class="basket-item">
-      <img class="basket-item-img" src="${t}" alt="${e}"/>
+      <img class="basket-item-img" src="${e}" alt="${a}"/>
       <div class="basket-item-info">
 <div class="first-item-part">
     <div class="title-category-container">
-    <h2 class="title-basket-item">${e}</h2>
-    <p class="category-basket-item">${a}</p>
+    <h2 class="title-basket-item">${a}</h2>
+    <p class="category-basket-item">${s}</p>
     </div>
-    <button class="delete-basket-item-btn" data-id="${s}">
+    <button class="delete-basket-item-btn" data-id="${t}">
       <svg class="trash-btn-icon" height="16" width="16">
                 <use href="../img/icons.svg#icon-trash"></use>
               </svg></button>
 </div>
-    <p class="descr-basket-item">${i}</p>
+    <p class="descr-basket-item">${n}</p>
     <div class="last-item-part">
-    <p class="author-basket-item">${o}</p>
-${c(n)}
+    <p class="author-basket-item">${i}</p>
+${l(r)}
      </div>
      </div>
-    </li>`}const m=document.querySelector(".basket-list"),p=document.querySelector(".test");p.addEventListener("click",k);async function k(){const s=await l("Paperback Nonfiction");console.log(s);const t=s.map(r).join("");m.innerHTML=t}
+    </li>`}const m={theme:"theme",booksInCart:"booksInCart"};function p(t){try{const e=localStorage.getItem(t);return e===null?(console.log(`The data with the key: "${t}" was not found in Local Storage`),null):JSON.parse(e)}catch(e){return console.error(`An error occurred when trying to read data from Local Starage ${e}`),null}}const o={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),start:document.querySelector(".js-test")};function g(){o.basketShoppingList.innerHTML="";let t=p(m.booksInCart);if(console.log(t),!t||!t.length){o.emptyCardContainer.classList.remove("none");return}const a=t.map(c).join("");o.basketShoppingList.innerHTML=a}g();
 //# sourceMappingURL=commonHelpers2.js.map
