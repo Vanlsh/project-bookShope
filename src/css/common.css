@@ -1,9 +1,9 @@
 :root {
-  --gold-color: #eac645;
-  --violet-color: #4f2ee8;
-  --gray-color: #202024;
-  --dark-color: #111111;
-  --white-color: #ffffff;
+  --gold-color: rgb(234, 198, 69);
+  --violet-color: rgb(79, 46, 232);
+  --gray-color: rgb(32, 32, 36);
+  --dark-color: rgb(17, 17, 17);
+  --white-color: rgb(255, 255, 255);
   --white-background-color: #f6f6f6;
   --border-color: rgba(79, 46, 232, 0.4);
 }
