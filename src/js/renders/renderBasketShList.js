@@ -1,13 +1,19 @@
-import { getSelectedCategory } from '../api/books';
-import { markupBasketItem } from '../markups/markupBasketShList';
+import { markupBasketItem } from './markups/markupBasketShList';
+import { refsLS } from './keyConstsLS';
+import { getFromLocalStorage } from './localStorageAPI';
+import { refsShoppingList } from './refsShoppingList';
 
-const basketShoppingList = document.querySelector('.basket-list');
-const start = document.querySelector('.test');
-start.addEventListener('click', renderBasketItem);
+export function renderBasketItem() {
+  refsShoppingList.basketShoppingList.innerHTML = '';
 
-async function renderBasketItem() {
-  const data = await getSelectedCategory('Paperback Nonfiction');
+  let data = getFromLocalStorage(refsLS.booksInCart);
   console.log(data);
+  const isCardEmpty = !data || !data.length;
+  if (isCardEmpty) {
+    refsShoppingList.emptyCardContainer.classList.remove('none');
+    return;
+  }
+
   const books = data.map(markupBasketItem).join('');
-  basketShoppingList.innerHTML = books;
+  refsShoppingList.basketShoppingList.innerHTML = books;
 }
