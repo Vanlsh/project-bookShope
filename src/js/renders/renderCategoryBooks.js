@@ -23,7 +23,7 @@ export async function renderCategory(category) {
     // Додаємо розмітку до елементу <ul>
     ul.innerHTML = booksMarkup;
 
-    ul.addEventListener('click', handleModalClick);
+    ul.addEventListener('click',() => console.log('Hello World'));
   } catch (error) {
     // Обробка помилок, якщо вони виникають під час виконання блоку try
     toastError('Error rendering category. Please try again later.');
