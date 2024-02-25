@@ -21,6 +21,12 @@
   color: var(--main-fount-color);
   transition: all 0.3s ease;
 }
+
+.shop-navigation-list > li .active {
+  font-weight: 700;
+  color: var(--hover-color);
+  text-transform: uppercase;
+}
 .shop-navigation-list > li > button:hover {
   font-weight: 700;
   color: var(--hover-color);
