@@ -56,12 +56,13 @@
     margin: 0 auto;
     padding: 0;
     border: none;
-    transition: transform 0.3s ease;
+    transition: transform 300ms ease;
     transform: rotate(0deg);
+    background-color: var(--white-color);
     transition: background-color 300ms linear;
 }
 
-.charity-btn:hover {
+.charity-btn:active {
     background-color: var(--violet-color);
 }
 
@@ -71,7 +72,7 @@
     transition: fill 300ms linear;
 }
 
-.charity-btn:hover .charity-btn-icon {
+.charity-btn:active .charity-btn-icon {
     fill: var(--white-color);
 }
 
@@ -107,6 +108,22 @@
     .charity-btn-icon {
         width: 22px;
         height: 22px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 15px;
+    }
+   
+    .charity-btn:hover {
+        background-color: var(--violet-color);
+        pointer-events: none;
+    }
+    
+    .charity-btn:hover .charity-btn-icon {
+        fill: var(--white-color);
     }
 }
 
