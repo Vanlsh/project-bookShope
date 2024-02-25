@@ -3,7 +3,7 @@ import { markupBestSellersBooks } from './markups/markupBestBooks';
 import { refs } from './refs';
 import { markupTitle } from './markups/markupTitle';
 
-async function renderBestSellerBooks() {
+export async function renderBestSellerBooks() {
   const bestsellers = await getTopBooks();
   refs.gallery.innerHTML = '';
 
