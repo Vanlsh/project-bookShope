@@ -1,4 +1,4 @@
-import"./assets/charitableFunds-afc70ed0.js";import{i as l,a as c}from"./assets/vendor-8cce9181.js";const p={titleColor:"#FFFFFF",messageColor:"#FFFFFF",messageSize:"20px",position:"topRight",displayMode:"replace",closeOnEscape:!0,pauseOnHover:!1,maxWidth:432,messageSize:"20px",messageLineHeight:"24px"};function m(s){l.show({message:s,backgroundColor:"#EF4040",progressBarColor:"#FFE0AC",...p})}const g="https://books-backend.p.goit.global",k=1e3*30,o=c.create({baseURL:g,timeout:k});function u(s){return m(s.message),null}o.interceptors.response.use(s=>s,u);function d(s){return o.get("/books/category",{params:{category:s}}).then(t=>t.data)}function b(s){const t=s.find(e=>e.name==="Amazon").url,a=s.find(e=>e.name==="Apple Books").url;return`
+import{b as l}from"./assets/books-eed7060a.js";import"./assets/vendor-8cce9181.js";function c(s){const t=s.find(a=>a.name==="Amazon").url,e=s.find(a=>a.name==="Apple Books").url;return`
     <ul class="links-shop-list">
        <li class="link-shop-item">
          <a class="amazon-link" href="${t}" target="_blank" rel="noopener">
@@ -8,7 +8,7 @@ import"./assets/charitableFunds-afc70ed0.js";import{i as l,a as c}from"./assets/
        <li class="link-shop-item">
          <a
            class="apple-book-link"
-           href="${a}"
+           href="${e}"
            target="_blank"
            rel="noopener"
          >
@@ -19,14 +19,14 @@ import"./assets/charitableFunds-afc70ed0.js";import{i as l,a as c}from"./assets/
            ></img>
          </a>
        </li>
-     </ul>`}function h({id:s,book_image:t,title:a,list_name:e,description:i,author:n,buy_links:r}){return`
+     </ul>`}function r({id:s,book_image:t,title:e,list_name:a,description:i,author:o,buy_links:n}){return`
     <li class="basket-item">
-      <img class="basket-item-img" src="${t}" alt="${a}"/>
+      <img class="basket-item-img" src="${t}" alt="${e}"/>
       <div class="basket-item-info">
 <div class="first-item-part">
     <div class="title-category-container">
-    <h2 class="title-basket-item">${a}</h2>
-    <p class="category-basket-item">${e}</p>
+    <h2 class="title-basket-item">${e}</h2>
+    <p class="category-basket-item">${a}</p>
     </div>
     <button class="delete-basket-item-btn" data-id="${s}">
       <svg class="trash-btn-icon" height="16" width="16">
@@ -35,9 +35,9 @@ import"./assets/charitableFunds-afc70ed0.js";import{i as l,a as c}from"./assets/
 </div>
     <p class="descr-basket-item">${i}</p>
     <div class="last-item-part">
-    <p class="author-basket-item">${n}</p>
-${b(r)}
+    <p class="author-basket-item">${o}</p>
+${c(n)}
      </div>
      </div>
-    </li>`}const f=document.querySelector(".basket-list"),F=document.querySelector(".test");F.addEventListener("click",v);async function v(){const s=await d("Paperback Nonfiction");console.log(s);const t=s.map(h).join("");f.innerHTML=t}
+    </li>`}const m=document.querySelector(".basket-list"),p=document.querySelector(".test");p.addEventListener("click",k);async function k(){const s=await l("Paperback Nonfiction");console.log(s);const t=s.map(r).join("");m.innerHTML=t}
 //# sourceMappingURL=commonHelpers2.js.map
