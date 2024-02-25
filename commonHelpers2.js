@@ -1,4 +1,4 @@
-import{g as r,r as c}from"./assets/localStorageAPI-23a6861f.js";function m(s){const e=s.find(a=>a.name==="Amazon").url,t=s.find(a=>a.name==="Apple Books").url;return`
+import{g as r,r as c}from"./assets/localStorageAPI-93ac1b1a.js";function m(s){const e=s.find(a=>a.name==="Amazon").url,t=s.find(a=>a.name==="Apple Books").url;return`
     <ul class="links-shop-list">
        <li class="link-shop-item">
          <a class="amazon-link" href="${e}" target="_blank" rel="noopener">
