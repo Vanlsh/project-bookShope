@@ -4,10 +4,10 @@
       189.32% 190.93% at 59.76% -23.42%,
       rgb(79, 46, 232) 18.02733987569809%,
       rgb(255, 255, 255) 100%
-    ); /* Додайте шлях до вашого фонового зображення */
+    );
   background-repeat: no-repeat;
-  background-size: contain; /* Розмір фонового зображення */
-  background-position: bottom; /* Позиція фонового зображення */
+  background-size: contain;
+  background-position: bottom;
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -68,10 +68,10 @@
   fill: var(--white-color);
 }
 
-.is-closed {
+.menu-is-closed {
   right: -100%;
 }
 
-.is-open {
+.menu-is-open {
   right: 0;
 }
