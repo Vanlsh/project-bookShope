@@ -1,7 +1,6 @@
 export function onCardClick(event) {
-  event.preventDefault();
-  console.log(event.target.dataset.id);
-  if (event.target === event.currentTarget) {
-    return;
-  }
+  if (event.target === event.currentTarget) return;
+  const id =
+    event.target.dataset.id || event.target.closest('li[data-id]').dataset.id;
+  console.log(id);
 }
