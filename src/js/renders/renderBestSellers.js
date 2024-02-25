@@ -1,7 +1,7 @@
-import { getTopBooks } from './api/books';
-import { markupBestSellersBooks } from './markups/markupBestBooks';
-import { refs } from './refs';
-import { markupTitle } from './markups/markupTitle';
+import { getTopBooks } from '../api/books';
+import { markupBestSellersBooks } from '../markups/markupBestBooks';
+import { refs } from '../refs';
+import { markupTitle } from '../markups/markupTitle';
 
 export async function renderBestSellerBooks() {
   const bestsellers = await getTopBooks();
