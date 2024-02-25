@@ -1,7 +1,7 @@
-import { markupBasketItem } from './markups/markupBasketShList';
-import { refsLS } from './keyConstsLS';
-import { getFromLocalStorage } from './localStorageAPI';
-import { refsShoppingList } from './refsShoppingList';
+import { markupBasketItem } from '../markups/markupBasketShList';
+import { refsLS } from '../keyConstsLS';
+import { getFromLocalStorage } from '../localStorageAPI';
+import { refsShoppingList } from '../refsShoppingList';
 
 export function renderBasketItem() {
   refsShoppingList.basketShoppingList.innerHTML = '';
