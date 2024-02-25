@@ -19,8 +19,8 @@ function markupBasketItem({
   author,
   buy_links,
 }) {
-  const amazon = buy_links.find(item => item.name === 'Amazon');
-  const appleBooks = buy_links.find(item => item.name === 'Apple Books');
+  const amazon = buy_links.find(item => item.name === 'Amazon').url;
+  const appleBooks = buy_links.find(item => item.name === 'Apple Books').url;
 
   return `
     <li class="basket-item">
