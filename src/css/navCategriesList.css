@@ -1,7 +1,7 @@
 .shop-navigation-list {
   max-height: 228px;
   overflow-y: auto;
-  max-width: 335px;
+  width: 335px;
 }
 .shop-navigation-list > li {
   margin-bottom: 24px;
@@ -30,7 +30,7 @@
 @media screen and (min-width: 768px) {
   .shop-navigation-list {
     max-height: 472px;
-    max-width: 337px;
+    width: 337px;
   }
   .shop-navigation-list > li {
     margin-bottom: 32px;
@@ -43,6 +43,6 @@
 
 @media screen and (min-width: 1422px) {
   .shop-navigation-list {
-    max-width: 356px;
+    width: 356px;
   }
 }
