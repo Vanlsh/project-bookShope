@@ -7,9 +7,10 @@
 @import url('./common.css');
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./gallery.css');
+@import url('./galleryBestsellers.css');
 @import url('./charitableFunds.css');
 @import url('./navCategriesList.css');
+@import url('./gallary.css');
 
 :root {
   font-synthesis: none;
