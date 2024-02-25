@@ -1,12 +1,13 @@
-.is-open {
-}
-
 .burger-wraper {
-  background: radial-gradient(
-    189.32% 190.93% at 59.76% -23.42%,
-    rgb(79, 46, 232) 18.02733987569809%,
-    rgb(255, 255, 255) 100%
-  );
+  background: url('../img/burger-books.png'),
+    radial-gradient(
+      189.32% 190.93% at 59.76% -23.42%,
+      rgb(79, 46, 232) 18.02733987569809%,
+      rgb(255, 255, 255) 100%
+    ); /* Додайте шлях до вашого фонового зображення */
+  background-repeat: no-repeat;
+  background-size: contain; /* Розмір фонового зображення */
+  background-position: bottom; /* Позиція фонового зображення */
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -24,8 +25,6 @@
   height: 70px;
 }
 
-.burger-list {
-}
 .burger-list-home {
   border-radius: 36px;
   padding: 8px 16px;
