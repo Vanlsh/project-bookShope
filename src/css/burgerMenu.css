@@ -70,10 +70,8 @@
 
 .is-closed {
   right: -100%;
-  display: none;
 }
 
 .is-open {
-  display: flex;
   right: 0;
 }
