@@ -65,9 +65,11 @@
   font-weight: 700;
   gap: 8px;
 }
-/* .header-boohshelf-logo {
-
-} */
+.header-boohshelf-logo {
+display: flex;
+align-items: center;
+text-align: center;
+}
 .header-navigation-list {
   display: none;
 }
@@ -127,6 +129,10 @@
     border-radius: 36px;
     background-color: var(--gold-color);
   }
+  .header-open-icon,
+.header-close-icon {
+  display: none;
+}
 }
 @media screen and (min-width: 1422px) {
   .header-container {
@@ -139,7 +145,12 @@
     display: flex;
     gap: 40px;
   }
+  .header-open-icon,
+.header-close-icon {
+  display: none;
 }
+}
+
 
 
 
