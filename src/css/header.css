@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   color: var(--main-fount-color);
-  font-weight: 700;
+  font-weight: 800;
   gap: 8px;
 }
 .header-boohshelf-logo {
@@ -73,8 +73,10 @@ text-align: center;
 .header-navigation-list {
   display: none;
 }
-/* .header-navigation-item {
-} */
+.header-navigation-item {
+  display: flex;
+  align-items: center;
+}
 .header-btns-wrapper {
   display: flex;
   align-items: center;
