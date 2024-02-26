@@ -48,5 +48,4 @@ export async function showModal(id) {
   modalWrapper.classList.add(IS_OPEN);
 
   if (isInCart) modalCongratulation.classList.remove(HIDDEN);
-  console.log(data);
 }
