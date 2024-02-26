@@ -24,4 +24,6 @@ export const refs = {
   menuItems: document.querySelectorAll('.burger-list-ithem'),
   logo: document.querySelector('.js-header-logo'),
   listNavigation: document.querySelector('.js-header-navigation-list'),
+  themeSwitcher: document.querySelector('.header-input'),
+  body: document.body
 };
