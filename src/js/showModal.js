@@ -3,6 +3,7 @@ import { getById } from './api/books';
 import { refsLS } from './keyConstsLS';
 import { setToLocalStorage } from './localStorageAPI';
 import { isBookInCart } from './helpers/isBookInCart';
+import { markupBuyLinks } from './markups/markupBuyLinks';
 import {
   ADD,
   REMOVE,
@@ -35,6 +36,7 @@ export async function showModal(id) {
   const { _id, book_image, description, author, title, buy_links } = data;
   const isInCart = isBookInCart(_id);
 
+  modalLinks.innerHTML = markupBuyLinks(buy_links);
   modalTitle.textContent = title;
   modalDescription.textContent = author;
   modalText.textContent = description;
