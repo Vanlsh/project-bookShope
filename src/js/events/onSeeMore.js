@@ -2,6 +2,7 @@ import { renderCategory } from '../renders/renderCategoryBooks';
 import { removeBntNavStyles } from '../helpers/removeBntNavStyles';
 import { refsLS } from '../keyConstsLS';
 import { setToLocalStorage } from '../localStorageAPI';
+import { scrollHighlightElem } from '../helpers/scrollElemInCategoryList';
 import { scrollGallery } from '../helpers/scrollGallery';
 
 export function onSeeMore(event) {
@@ -14,4 +15,5 @@ export function onSeeMore(event) {
   btnCategoryTitle.classList.add('active');
   setToLocalStorage(refsLS.categoryName, categoryName);
   renderCategory(categoryName);
+  scrollHighlightElem();
 }

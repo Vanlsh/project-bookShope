@@ -5,7 +5,6 @@ import { refsLS } from '../keyConstsLS';
 const { categoryName } = refsLS;
 import { refs } from '../refs';
 const { btnAllCategories } = refs;
-//винести в Рефс
 
 export function onLoadAllBestSelBooks() {
   const getCategoryName = getFromLocalStorage(categoryName);
