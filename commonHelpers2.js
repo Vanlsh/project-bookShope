@@ -1,6 +1,6 @@
-import{m as c,g as m,r as l}from"./assets/markupBuyLinks-bc5117fd.js";function p({id:t,book_image:a,title:s,list_name:i,description:r,author:n,buy_links:o}){return`
+import{a as m,g as o,r,m as d}from"./assets/removeBookFromCart-bca3d6fe.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=o(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}function k({_id:t,book_image:e,title:s,list_name:i,description:n,author:c,buy_links:l}){return`
     <li class="basket-item">
-      <img class="basket-item-img" src="${a}" alt="${s}"/>
+      <img class="basket-item-img" src="${e}" alt="${s}"/>
       <div class="basket-item-info">
 <div class="first-item-part">
     <div class="title-category-container">
@@ -12,11 +12,11 @@ import{m as c,g as m,r as l}from"./assets/markupBuyLinks-bc5117fd.js";function p
                 <use href="../img/icons.svg#icon-trash"></use>
               </svg></button>
 </div>
-    <p class="descr-basket-item">${r}</p>
+    <p class="descr-basket-item">${n}</p>
     <div class="last-item-part">
-    <p class="author-basket-item">${n}</p>
-${c(o)}
+    <p class="author-basket-item">${c}</p>
+${d(l)}
      </div>
      </div>
-    </li>`}const e={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),start:document.querySelector(".js-test")};function d(){e.basketShoppingList.innerHTML="";let t=m(l.booksInCart);if(console.log(t),!t||!t.length){e.emptyCardContainer.classList.remove("none");return}const s=t.map(p).join("");e.basketShoppingList.innerHTML=s}d();
+    </li>`}function b(){a.basketShoppingList.innerHTML="";let t=o(r.booksInCart);if(!t||!t.length){a.emptyCardContainer.classList.remove("none");return}const s=t.map(k).join("");a.basketShoppingList.innerHTML=s}b();a.basketShoppingList.addEventListener("click",p);
 //# sourceMappingURL=commonHelpers2.js.map
