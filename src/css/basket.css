@@ -11,8 +11,8 @@
 }
 
 .background-container {
-  margin-top: 140px;
-  width: 100%;
+  margin-top: 80px;
+  min-width: 375px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,10 +30,6 @@
   max-width: 375px;
   display: flex;
   flex-direction: column;
-}
-
-.shList-title {
-  margin-bottom: 40px;
 }
 
 .basket-list {
@@ -89,6 +85,12 @@
 }
 
 .category-basket-item {
+  height: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -139,6 +141,15 @@
   color: var(--light-gray-color);
 }
 
+.author-basket-item {
+  height: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
 @media screen and (min-width: 768px) {
   .shList-container {
     max-width: 768px;
@@ -147,6 +158,11 @@
   .empty-text {
     font-size: 18px;
     line-height: 1.33;
+  }
+
+  .background-container {
+    margin-top: 100px;
+    min-width: 768px;
   }
 
   .basket-item {
@@ -190,6 +206,10 @@
   .shList-container {
     margin-left: 40px;
     max-width: 1026px;
+  }
+
+  .background-container {
+    min-width: 1020px;
   }
 
   .basket-container .charity-slider {
