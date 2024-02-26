@@ -24,8 +24,19 @@
 
 @media screen and (min-width: 768px) {
   .modal-container {
-    max-width: 579px;
+    min-width: 579px;
+    min-height: 465px;
     padding: 40px;
+  }
+  .modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-height: 498px) {
+  .modal-wrapper {
+    display: block;
   }
 }
 
