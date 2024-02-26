@@ -14,6 +14,14 @@ export const refs = {
   modalBtn: document.querySelector('.js-modal-btn'),
   modalCongratulation: document.querySelector('.js-modal-congratulation'),
   modalClose: document.querySelector('.js-icon-close'),
+  openButton: document.querySelector('.header-open-button'),
+  closeButton: document.querySelector('.header-close-button'),
+  menuWrapper: document.querySelector('.burger-wraper'),
+  headerContainer: document.querySelector('.header-container'),
+  body: document.querySelector('body'),
+  menuLinks: document.querySelectorAll('.burger-list'),
+  currentPage: window.location.pathname,
+  menuItems: document.querySelectorAll('.burger-list-ithem')
   logo: document.querySelector('.js-header-logo'),
   listNavigation: document.querySelector('.js-header-navigation-list'),
 };

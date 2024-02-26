@@ -1,0 +1,81 @@
+/* CSS */
+
+.burger-wraper {
+  background: url('../img/burger-books.png'),
+    radial-gradient(
+      189.32% 190.93% at 59.76% -23.42%,
+      rgb(79, 46, 232) 18.02733987569809%,
+      rgb(255, 255, 255) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease;
+}
+
+.burger-body {
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+  box-sizing: content-box;
+  padding: 0;
+  width: 160px;
+  height: 70px;
+}
+
+.burger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.burger-list-ithem {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  fill: var(--white-color);
+  padding: 8px 16px;
+}
+
+.burger-icon {
+  width: 16px;
+  height: 16px;
+  fill: inherit;
+}
+
+.menu-is-closed {
+  right: -100%;
+}
+
+.menu-is-open {
+  right: 0;
+}
+
+/* Додано стиль для активного пункту меню */
+.burger-list-active {
+  border-radius: 36px;
+  padding: 8px 16px;
+  height: 36px;
+  width: fit-content;
+  background-color: var(--gold-color);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  fill: var(--dark-color);
+}
