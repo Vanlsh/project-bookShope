@@ -172,7 +172,7 @@
 }
 
 .modal-congratulation.hidden {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
