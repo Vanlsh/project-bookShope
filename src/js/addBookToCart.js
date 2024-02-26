@@ -1,11 +1,12 @@
 import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
 import { refsLS } from './keyConstsLS';
 import { toastSuccess } from './components/toast';
+import { refs } from './refs';
 
 export function addBookToCart(book) {
   // get array from Local Storage
   let booksInCart = getFromLocalStorage(refsLS.booksInCart);
-  //if local Storage doesn`t have arraay, create new arr with obj "book"
+  //if local Storage doesn`t have array, create new arr with obj "book"
   if (booksInCart === null) {
     booksInCart = [book];
   } else {
@@ -18,6 +19,7 @@ export function addBookToCart(book) {
     } else {
       //Add book to arr
       booksInCart.push(book);
+      refs.modalBtn.classList.add('clicked');
     }
   }
   //Save update arr in Local Storage

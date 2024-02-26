@@ -29,6 +29,61 @@
   position: relative;
 }
 
+.modal-btn {
+  border: 2px solid #4f2ee8;
+  border-radius: 40px;
+  padding: 14px 28px;
+  width: 211px;
+  height: 46px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  white-space: nowrap;
+  margin-top: 44px;
+  color: var(--title-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-btn.clicked{
+ width: 279px;
+}
+
+.modal-image-description {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--light-gray-color);
+  margin-top: 4px;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  stroke: var(--violet-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--violet-color);
+  color: var(--white-color);
+}
+
+.modal-congratulation {
+  text-align: center;
+  font-weight: 400;
+  margin: 8px auto;
+  width: 242px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--modal-gray);
+}
+
 @media screen and (min-width: 768px) {
   .modal-container {
     min-width: 579px;
@@ -47,12 +102,6 @@
   }
 }
 
-.modal-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
 
 @media screen and (min-width: 768px) {
   .modal-image {
@@ -75,13 +124,7 @@
   }
 }
 
-.modal-image-description {
-  font-style: italic;
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--light-gray-color);
-  margin-top: 4px;
-}
+
 
 @media screen and (min-width: 768px) {
   .modal-image-description {
@@ -101,20 +144,7 @@
   }
 }
 
-.modal-btn {
-  border: 2px solid #4f2ee8;
-  border-radius: 40px;
-  padding: 14px 28px;
-  width: 211px;
-  height: 46px;
-  background-color: transparent;
-  display: block;
-  margin: 0 auto;
-  white-space: nowrap;
-  margin-top: 44px;
-  color: var(--title-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+
 
 @media screen and (min-width: 768px) {
   .modal-btn {
@@ -143,25 +173,7 @@
   }
 }
 
-.icon-close:hover,
-.icon-close:focus {
-  stroke: var(--violet-color);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--violet-color);
-  color: var(--white-color);
-}
-
-.modal-congratulation {
-  text-align: center;
-  margin: 8px auto 0;
-  width: 242px;
-  font-size: 10px;
-  line-height: 1.2;
-  color: var(--modal-gray);
-}
 
 @media screen and (min-width: 768px) {
   .modal-congratulation {
