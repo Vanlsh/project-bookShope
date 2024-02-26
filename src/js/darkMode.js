@@ -1,34 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitcher = document.querySelector('.header-input');
-    const body = document.body;
+import { getFromLocalStorage, setToLocalStorage} from './localStorageAPI';
+import { refsLS } from './keyConstsLS';
+import { refs } from './refs';
+
+    
 
 
-    function toggleTheme() {
-        if (themeSwitcher.checked) {
-            body.classList.remove('light');
-            body.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.remove('dark');
-            body.classList.add('light');
-            localStorage.setItem('theme', 'light');
-        }
-    }
-
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        body.classList.remove('light');
-        body.classList.add('dark');
-        themeSwitcher.checked = true;
-    } else {
-        body.classList.remove('dark');
-        body.classList.add('light');
-        themeSwitcher.checked = false;
-    }
-
-   
-    themeSwitcher.addEventListener('change', function() {
-        toggleTheme();
-    });
+function checkTheme() {
+    const savedTheme = getFromLocalStorage(refsLS.theme);
+  if (savedTheme === 'dark') {
+    refs.body.classList.remove('light');
+    refs.body.classList.add('dark');
+    refs.themeSwitcher.checked = true;
+  } else {
+    refs.body.classList.remove('dark');
+    refs.body.classList.add('light');
+    refs.themeSwitcher.checked = false;
+  }
+  document.body.classList.remove('theme-loading');
+}
+checkTheme();
+function toggleTheme() {
+  if (themeSwitcher.checked) {
+    refs.body.classList.remove('light');
+    refs.body.classList.add('dark');
+      setToLocalStorage(refsLS.theme,'dark');
+  } else {
+    refs.body.classList.remove('dark');
+    refs.body.classList.add('light');
+    setToLocalStorage(refsLS.theme, 'light');
+  }
+}
+refs.themeSwitcher.addEventListener('change', function () {
+  toggleTheme();
 });
