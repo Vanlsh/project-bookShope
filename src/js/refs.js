@@ -2,6 +2,9 @@ export const refs = {
   ulCategoryContainer: document.querySelector('#listContainer'),
   gallery: document.querySelector('.js-gallery'),
   loader: document.querySelector('.load-div'),
+  btnAllCategories: document.querySelector(
+    'button[data-category="All categories"]'
+  ),
   modalWrapper: document.querySelector('.js-modal-wrapper'),
   modalImg: document.querySelector('.js-modal-img'),
   modalTitle: document.querySelector('.js-modal-title'),
