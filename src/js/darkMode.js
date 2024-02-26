@@ -20,7 +20,7 @@ function checkTheme() {
 }
 checkTheme();
 function toggleTheme() {
-  if (themeSwitcher.checked) {
+  if (refs.themeSwitcher.checked) {
     refs.body.classList.remove('light');
     refs.body.classList.add('dark');
       setToLocalStorage(refsLS.theme,'dark');
