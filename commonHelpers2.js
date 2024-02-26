@@ -1,4 +1,4 @@
-import{m as c,g as m,r as l}from"./assets/markupBuyLinks-25801441.js";function p({id:t,book_image:a,title:s,list_name:i,description:r,author:n,buy_links:o}){return`
+import{m as c,g as m,r as l}from"./assets/markupBuyLinks-88d06aa1.js";function p({id:t,book_image:a,title:s,list_name:i,description:r,author:n,buy_links:o}){return`
     <li class="basket-item">
       <img class="basket-item-img" src="${a}" alt="${s}"/>
       <div class="basket-item-info">
