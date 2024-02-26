@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeSwitcher = document.querySelector('.header-input');
     const body = document.body;
 
-    // Функція для зміни теми
+
     function toggleTheme() {
         if (themeSwitcher.checked) {
             body.classList.remove('light');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Перевірка збереженої теми при завантаженні сторінки
+
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.remove('light');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         themeSwitcher.checked = false;
     }
 
-    // Додати обробник подій на зміну стану чекбокса
+   
     themeSwitcher.addEventListener('change', function() {
         toggleTheme();
     });
