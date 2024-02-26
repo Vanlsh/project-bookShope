@@ -9,4 +9,5 @@ export const refs = {
   modalLinks: document.querySelector('.js-modal-links-icon'),
   modalBtn: document.querySelector('.js-modal-btn'),
   modalCongratulation: document.querySelector('.js-modal-congratulation'),
+  modalClose: document.querySelector('.js-icon-close'),
 };
