@@ -123,24 +123,25 @@
     fill: var(--main-fount-color);
   }
   .header-navigation-item {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 36px;
   }
   .header-navigation-item a {
     display: flex;
     align-items: center;
     gap: 4px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 36px;
   }
-  .home .header-navigation-item:first-child {
+  .home .header-navigation-item:first-child a {
     color: var(--dark-color);
     background-color: var(--gold-color);
   }
-  .shop-list-page .header-navigation-item:nth-child(2) {
+  .shop-list-page .header-navigation-item:nth-child(2) a {
     color: var(--dark-color);
     background-color: var(--gold-color);
+  }
+  .shop-list-page .header-cart-icon {
+    fill: var(--dark-color);
   }
 
   .header-open-icon,
