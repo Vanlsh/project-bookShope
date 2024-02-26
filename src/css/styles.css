@@ -16,6 +16,8 @@
 @import url('./scrollButton.css');
 @import url('./modal.css');
 
+@import url('./loader.css');
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;

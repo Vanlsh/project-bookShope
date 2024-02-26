@@ -11,6 +11,7 @@
 
 .gallery {
   margin-top: 40px;
+  position: relative;
 }
 
 .category-title {
