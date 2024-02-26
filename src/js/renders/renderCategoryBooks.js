@@ -4,12 +4,15 @@ import { markupBookCard } from '../markups/markupOneBook';
 import { refs } from '../refs';
 import { markupTitle } from '../markups/markupTitle';
 import { onCardClick } from '../events/onCardClick';
+import { renderLoader } from './renderLoader';
+import { scrollGallery } from '../helpers/scrollGallery';
 
 export async function renderCategory(category) {
-  refs.gallery.innerHTML = '';
   try {
+    scrollGallery();
+    renderLoader(refs.gallery);
     const data = await getSelectedCategory(category);
-
+    refs.gallery.innerHTML = '';
     const titleElement = markupTitle(category);
     refs.gallery.appendChild(titleElement);
 
