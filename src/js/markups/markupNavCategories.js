@@ -1,4 +1,10 @@
-//Function for generation markup of all Categories in the list
+import { getFromLocalStorage } from '../localStorageAPI';
+import { refsLS } from '../keyConstsLS';
+const { categoryName } = refsLS;
+
 export function markupNavCatList({ list_name }) {
-  return `<li class="item-category"> <button type="button" data-category="${list_name}">${list_name}</button></li>`;
+  const getCategoryName = getFromLocalStorage(categoryName);
+  //Ignore  / adds active class to Category list and rending gallery
+  const isActive = getCategoryName === list_name ? 'active' : '';
+  return `<li class="item-category"> <button class="${isActive}" type="button" data-category="${list_name}">${list_name}</button></li>`;
 }
