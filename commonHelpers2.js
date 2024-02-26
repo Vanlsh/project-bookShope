@@ -1,4 +1,4 @@
-import{b as m,g as o,r,m as d}from"./assets/burgerMenu-2ad8045f.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=o(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}function b({_id:t,book_image:e,title:s,list_name:i,description:n,author:c,buy_links:l}){return`
+import{b as m,g as o,r,m as d}from"./assets/burgerMenu-dfb98380.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=o(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}function b({_id:t,book_image:e,title:s,list_name:i,description:n,author:c,buy_links:l}){return`
     <li class="basket-item">
       <img class="basket-item-img" src="${e}" alt="${s}"/>
       <div class="basket-item-info">
@@ -9,7 +9,7 @@ import{b as m,g as o,r,m as d}from"./assets/burgerMenu-2ad8045f.js";const a={bas
     </div>
     <button class="delete-basket-item-btn" data-id="${t}">
       <svg class="trash-btn-icon" height="16" width="16">
-                <use href="./img/icons.svg#icon-trash"></use>
+                <use href="/img/icons.svg#icon-trash"></use>
               </svg></button>
 </div>
     <p class="descr-basket-item">${n}</p>
