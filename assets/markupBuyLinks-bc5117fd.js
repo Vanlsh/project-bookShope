@@ -20,4 +20,4 @@
          </a>
        </li>
      </ul>`}export{y as g,S as m,h as r,g as s};
-//# sourceMappingURL=markupBuyLinks-c73dfa11.js.map
+//# sourceMappingURL=markupBuyLinks-bc5117fd.js.map
