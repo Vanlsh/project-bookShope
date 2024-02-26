@@ -1,11 +1,16 @@
 import './js/renders/renderNavCategoriesList';
 import { handlerGalleryNav } from './js/handlerGalleryNav';
+import { onModalButton } from './js/events/onModalButton';
+import { onCloseModal } from './js/events/onCloseModal';
 import { refs } from './js/refs';
-//Rendering bestsellers during window loading
 import { onLoadAllBestSelBooks } from './js/events/onLoadAllBestSellers';
-//
-const { ulCategoryContainer } = refs;
 
-ulCategoryContainer.addEventListener('click', handlerGalleryNav);
+const { ulCategoryContainer, modalBtn, modalClose, modalWrapper } = refs;
 
 document.addEventListener('DOMContentLoaded', onLoadAllBestSelBooks);
+
+ulCategoryContainer.addEventListener('click', handlerGalleryNav);
+modalBtn.addEventListener('click', onModalButton);
+modalClose.addEventListener('click', onCloseModal);
+modalWrapper.addEventListener('click', onCloseModal);
+
