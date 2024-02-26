@@ -1,7 +1,7 @@
 import { markupBuyLinks } from '../markups/markupBuyLinks';
 
 export function markupBasketItem({
-  id,
+  _id,
   book_image,
   title,
   list_name,
@@ -18,7 +18,7 @@ export function markupBasketItem({
     <h2 class="title-basket-item">${title}</h2>
     <p class="category-basket-item">${list_name}</p>
     </div>
-    <button class="delete-basket-item-btn" data-id="${id}">
+    <button class="delete-basket-item-btn" data-id="${_id}">
       <svg class="trash-btn-icon" height="16" width="16">
                 <use href="../img/icons.svg#icon-trash"></use>
               </svg></button>

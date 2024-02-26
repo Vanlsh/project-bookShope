@@ -22,4 +22,6 @@ export const refs = {
   menuLinks: document.querySelectorAll('.burger-list'),
   currentPage: window.location.pathname,
   menuItems: document.querySelectorAll('.burger-list-ithem')
+  logo: document.querySelector('.js-header-logo'),
+  listNavigation: document.querySelector('.js-header-navigation-list'),
 };
