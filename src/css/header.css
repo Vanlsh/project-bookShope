@@ -47,7 +47,7 @@
 /* header */
 /* header */
 .header-container {
-  min-width: 375px;
+  max-width: 375px;
   overflow: hidden;
   position: relative;
   z-index: 10;
