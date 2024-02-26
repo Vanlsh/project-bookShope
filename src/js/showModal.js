@@ -45,6 +45,7 @@ export async function showModal(id) {
 
   modalBtn.dataset.id = _id;
   modalBtn.setAttribute('data-type', isInCart ? REMOVE : ADD);
+  modalBtn.classList.add(isInCart ? 'clicked' : '');
   modalWrapper.classList.add(IS_OPEN);
 
   if (isInCart) modalCongratulation.classList.remove(HIDDEN);

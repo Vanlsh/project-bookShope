@@ -24,5 +24,4 @@ export function addBookToCart(book) {
   //Save update arr in Local Storage
   setToLocalStorage(refsLS.booksInCart, booksInCart);
   toastSuccess('The book was successfully written to Cart!');
-  refs.modalBtn.classList.add('clicked');
 }
