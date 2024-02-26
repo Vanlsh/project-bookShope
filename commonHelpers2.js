@@ -1,4 +1,4 @@
-import{a as m,g as o,r,m as d}from"./assets/removeBookFromCart-56e2544e.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=o(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}function k({_id:t,book_image:e,title:s,list_name:i,description:n,author:c,buy_links:l}){return`
+import{b as m,g as o,r,m as d}from"./assets/burgerMenu-77beaa0a.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=o(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}function b({_id:t,book_image:e,title:s,list_name:i,description:n,author:c,buy_links:l}){return`
     <li class="basket-item">
       <img class="basket-item-img" src="${e}" alt="${s}"/>
       <div class="basket-item-info">
@@ -18,5 +18,5 @@ import{a as m,g as o,r,m as d}from"./assets/removeBookFromCart-56e2544e.js";cons
 ${d(l)}
      </div>
      </div>
-    </li>`}function b(){a.basketShoppingList.innerHTML="";let t=o(r.booksInCart);if(!t||!t.length){a.emptyCardContainer.classList.remove("none");return}const s=t.map(k).join("");a.basketShoppingList.innerHTML=s}b();a.basketShoppingList.addEventListener("click",p);
+    </li>`}function k(){a.basketShoppingList.innerHTML="";let t=o(r.booksInCart);if(!t||!t.length){a.emptyCardContainer.classList.remove("none");return}const s=t.map(b).join("");a.basketShoppingList.innerHTML=s}k();a.basketShoppingList.addEventListener("click",p);
 //# sourceMappingURL=commonHelpers2.js.map
