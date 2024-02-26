@@ -29,7 +29,6 @@
   position: relative;
 }
 
-
 .modal-btn {
   border: 2px solid #4f2ee8;
   border-radius: 40px;
@@ -47,8 +46,8 @@
   line-height: 1.2;
 }
 
-.modal-btn.clicked{
- padding: 14px 20px;
+.modal-btn.clicked {
+  padding: 14px 20px;
 }
 
 .modal-image-description {
@@ -64,21 +63,20 @@
   height: auto;
   margin-bottom: 20px;
   border-radius: 8px;
-  
 }
 
-.img-amazon{
+.img-amazon {
   width: 62px;
   height: 19px;
   margin: 6px 10px 6px 0;
 }
 
-.img-apple-books{
+.img-apple-books {
   width: 33px;
   height: 32px;
 }
 
-.js-modal-img{
+.js-modal-img {
   border-radius: 8px;
   max-height: 408px;
   width: 100%;
@@ -121,13 +119,12 @@
   margin-bottom: 14px;
 }
 
-
 @media screen and (max-height: 498px) {
   .modal-wrapper {
     display: block;
+    padding-top: 100px;
   }
 }
-
 
 .icon-close {
   position: absolute;
@@ -139,7 +136,8 @@
   transition: stroke 0.3s ease;
 }
 
-.icon-close::before, .icon-close::after {
+.icon-close::before,
+.icon-close::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -157,7 +155,6 @@
 .icon-close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 
 @media screen and (min-width: 768px) {
   .modal-congratulation {
@@ -185,12 +182,12 @@
   .modal-btn {
     width: 100%;
     margin-top: 40px;
-    padding: 20px  145px 20px 145px;
+    padding: 20px 145px 20px 145px;
     font-size: 18px;
     line-height: 1.3;
   }
-  
-  .modal-btn.clicked{
+
+  .modal-btn.clicked {
     padding: 20px 100px 20px 100px;
   }
 
@@ -228,17 +225,15 @@
     letter-spacing: -0.04px;
   }
 
-  .modal-image-title{
+  .modal-image-title {
     max-width: 250px;
   }
 
-  .js-modal-img{
+  .js-modal-img {
+    max-width: 192px;
     max-height: 281px;
   }
 }
 
-
-@media screen and (min-width: 1422px){
-
-
+@media screen and (min-width: 1422px) {
 }
