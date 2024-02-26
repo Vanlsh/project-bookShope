@@ -32,7 +32,7 @@
 .modal-btn {
   border: 2px solid #4f2ee8;
   border-radius: 40px;
-  padding: 14px 28px;
+  padding: 14px 25px;
   width: 211px;
   height: 46px;
   background-color: transparent;
@@ -42,10 +42,14 @@
   margin-top: 44px;
   color: var(--title-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01px;
 }
 
 .modal-btn.clicked{
  width: 279px;
+ padding: 14px 20px;
 }
 
 .modal-image-description {

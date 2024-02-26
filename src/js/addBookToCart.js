@@ -19,10 +19,10 @@ export function addBookToCart(book) {
     } else {
       //Add book to arr
       booksInCart.push(book);
-      refs.modalBtn.classList.add('clicked');
     }
   }
   //Save update arr in Local Storage
   setToLocalStorage(refsLS.booksInCart, booksInCart);
   toastSuccess('The book was successfully written to Cart!');
+  refs.modalBtn.classList.add('clicked');
 }
