@@ -14,4 +14,6 @@ export const refs = {
   modalBtn: document.querySelector('.js-modal-btn'),
   modalCongratulation: document.querySelector('.js-modal-congratulation'),
   modalClose: document.querySelector('.js-icon-close'),
+  logo: document.querySelector('.js-header-logo'),
+  listNavigation: document.querySelector('.js-header-navigation-list'),
 };
