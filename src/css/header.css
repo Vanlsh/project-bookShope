@@ -47,14 +47,17 @@
 /* header */
 /* header */
 .header-container {
-  min-width: 375px;
+  max-width: 375px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
   z-index: 10;
   display: flex;
   text-align: center;
+  align-items: center;
   justify-content: space-between;
   padding: 16px;
+  background-color: var(--item-background-color);
   border: 1.5px solid var(--main-fount-color);
   border-radius: 0 0 8px 8px;
 }
@@ -62,17 +65,21 @@
   display: flex;
   align-items: center;
   color: var(--main-fount-color);
-  font-weight: 700;
+  font-weight: 800;
   gap: 8px;
 }
-/* .header-boohshelf-logo {
-
-} */
+.header-boohshelf-logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 .header-navigation-list {
   display: none;
 }
-/* .header-navigation-item {
-} */
+.header-navigation-item {
+  display: flex;
+  align-items: center;
+}
 .header-btns-wrapper {
   display: flex;
   align-items: center;
@@ -102,6 +109,7 @@
 }
 @media screen and (min-width: 768px) {
   .header-container {
+    max-width: 768px;
     padding: 19px 32px;
   }
   .header-navigation {
@@ -110,29 +118,39 @@
   }
   .header-navigation-list {
     display: flex;
-    gap: 16px;
   }
   .header-cart-icon {
-    stroke: var(--main-fount-color);
+    fill: var(--main-fount-color);
   }
   .header-navigation-item {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
-    padding: 8px 0;
+    padding: 8px 16px;
+    border-radius: 36px;
   }
   .header-navigation-item a {
     display: flex;
     align-items: center;
     gap: 4px;
   }
-  .header-navigation-item:first-child {
+  .home .header-navigation-item:first-child {
     color: var(--dark-color);
-    padding: 8px 16px;
-    border-radius: 36px;
     background-color: var(--gold-color);
+  }
+  .shop-list-page .header-navigation-item:nth-child(2) {
+    color: var(--dark-color);
+    background-color: var(--gold-color);
+  }
+
+  .header-open-icon,
+  .header-close-icon {
+    display: none;
   }
 }
 @media screen and (min-width: 1422px) {
   .header-container {
+    max-width: 1422px;
     padding: 19px 24px;
   }
   .header-navigation-list {

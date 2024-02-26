@@ -1,29 +1,27 @@
-.title{
-  margin-bottom: 40px;  
+.title {
+  margin-bottom: 40px;
 }
 
 .selected-category-list .books-item {
-    display: block;
+  display: block;
 }
 
-
-.selected-category-list{
+.selected-category-list {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
 }
 
-@media screen and (min-width: 768px){
-    .selected-category-list{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-};
+@media screen and (min-width: 768px) {
+  .selected-category-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 
-
-@media screen and (min-width: 1422px){
-    .selected-category-list{
-       gap: 24px; 
-    }
+@media screen and (min-width: 1422px) {
+  .selected-category-list {
+    gap: 24px;
+  }
 }
