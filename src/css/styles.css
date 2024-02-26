@@ -15,8 +15,8 @@
 @import url('./gallary.css');
 @import url('./scrollButton.css');
 @import url('./modal.css');
-
 @import url('./loader.css');
+@import url('./burgerMenu.css');
 
 :root {
   font-synthesis: none;
