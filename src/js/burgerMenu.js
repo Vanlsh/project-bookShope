@@ -41,12 +41,10 @@ window.addEventListener("orientationchange", function() {
 
 
 // Функція для встановлення активного стилю для пункту меню
-let currentPage = window.location.pathname;
-let menuItems = document.querySelectorAll('.burger-list-ithem');
-menuItems.forEach(function(item) {
+refs.menuItems.forEach(function(item) {
   let link = item.querySelector('.burger-list-link');
   let linkPath = link.getAttribute('href').split('/').pop();
-  let currentPagePath = currentPage.split('/').pop();
+  let currentPagePath = refs.currentPage.split('/').pop();
   if (linkPath === currentPagePath) {
     item.classList.remove('burger-list-ithem');
     item.classList.add('burger-list-active');

@@ -19,5 +19,7 @@ export const refs = {
   menuWrapper: document.querySelector('.burger-wraper'),
   headerContainer: document.querySelector('.header-container'),
   body: document.querySelector('body'),
-  menuLinks: document.querySelectorAll('.burger-list')
+  menuLinks: document.querySelectorAll('.burger-list'),
+  currentPage: window.location.pathname,
+  menuItems: document.querySelectorAll('.burger-list-ithem')
 };
