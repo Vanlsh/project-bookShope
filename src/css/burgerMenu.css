@@ -46,6 +46,7 @@
   text-transform: uppercase;
   color: var(--white-color);
   fill: var(--white-color);
+  padding: 8px 16px;
 }
 
 .burger-icon {
