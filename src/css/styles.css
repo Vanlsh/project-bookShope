@@ -14,6 +14,7 @@
 @import url('./navCategriesList.css');
 @import url('./gallary.css');
 @import url('./scrollButton.css');
+@import url('./modal.css');
 
 :root {
   font-synthesis: none;
