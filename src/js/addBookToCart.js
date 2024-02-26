@@ -5,7 +5,7 @@ import { toastSuccess } from './components/toast';
 export function addBookToCart(book) {
   // get array from Local Storage
   let booksInCart = getFromLocalStorage(refsLS.booksInCart);
-  //if local Storage doesn`t have arraay, create new arr with obj "book"
+  //if local Storage doesn`t have array, create new arr with obj "book"
   if (booksInCart === null) {
     booksInCart = [book];
   } else {

@@ -18,10 +18,12 @@ export function onModalButton(e) {
     e.target.setAttribute('data-type', REMOVE);
     e.target.textContent = TEXT_MODAL_BUTTON_REMOVE;
     refs.modalCongratulation.classList.remove(HIDDEN);
+    refs.modalBtn.classList.add('clicked');
   } else {
     removeBookFromCart(id);
     e.target.setAttribute('data-type', ADD);
     e.target.textContent = TEXT_MODAL_BUTTON_ADD;
     refs.modalCongratulation.classList.add(HIDDEN);
+    refs.modalBtn.classList.remove('clicked');
   }
 }
