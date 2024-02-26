@@ -26,7 +26,8 @@
   --item-background-color: var(--dark-color);
   --filter-color: var(--invert-filter-color);
   --hover-shadow: var(--hover-dark-filter-shadow);
-  --empty-color: var(var(--dark-empty-color));
+  --empty-color: var(--dark-empty-color);
+  --modal-gray: rgba(255, 255, 255, 0.5);
 }
 .light {
   --background-color: var(--white-background-color);
@@ -36,7 +37,8 @@
   --item-background-color: var(--white-color);
   --filter-color: var(--grey-filter-color);
   --hover-shadow: var(--hover-light-filter-shadow);
-  --empty-color: var(var(--light-empty-color));
+  --empty-color: var(--light-empty-color);
+  --modal-gray: rgba(17, 17, 17, 0.5);
 }
 
 body {
