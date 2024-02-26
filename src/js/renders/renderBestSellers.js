@@ -23,23 +23,3 @@ export async function renderBestSellerBooks() {
     console.error('No results');
   }
 }
-renderBestSellerBooks();
-
-// export async function renderDefaultBestSellerBooks() {
-//   renderLoader(refs.gallery);
-//   const bestsellers = await getTopBooks();
-//   if (bestsellers && bestsellers.length > 0) {
-//     refs.gallery.innerHTML = '';
-//     const bestsellersArr = bestsellers.map(markupBestSellersBooks);
-//     const bestsellersList = document.createElement('ul');
-//     bestsellersList.classList.add('category-books-list');
-
-//     bestsellersList.append(...bestsellersArr);
-
-//     refs.gallery.append(markupTitle('Best Sellers Books'));
-//     refs.gallery.append(bestsellersList);
-//   } else {
-//     console.error('No results');
-//   }
-// }
-// renderDefaultBestSellerBooks();

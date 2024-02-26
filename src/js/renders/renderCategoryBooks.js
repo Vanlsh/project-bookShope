@@ -9,7 +9,6 @@ import { scrollGallery } from '../helpers/scrollGallery';
 
 export async function renderCategory(category) {
   try {
-    scrollGallery();
     renderLoader(refs.gallery);
     const data = await getSelectedCategory(category);
     refs.gallery.innerHTML = '';
