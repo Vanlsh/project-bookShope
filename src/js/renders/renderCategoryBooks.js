@@ -5,7 +5,7 @@ import { refs } from '../refs';
 import { markupTitle } from '../markups/markupTitle';
 import { onCardClick } from '../events/onCardClick';
 import { renderLoader } from './renderLoader';
-import { scrollGallery } from '../helpers/scrollGallery';
+
 
 export async function renderCategory(category) {
   try {

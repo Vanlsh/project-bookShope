@@ -2,9 +2,8 @@ import { getTopBooks } from '../api/books';
 import { markupBestSellersBooks } from '../markups/markupBestBooks';
 import { refs } from '../refs';
 import { markupTitle } from '../markups/markupTitle';
-import { showLoader, hideLoader } from '../loader';
 import { renderLoader } from './renderLoader';
-import { scrollGallery } from '../helpers/scrollGallery';
+
 
 export async function renderBestSellerBooks() {
   renderLoader(refs.gallery);
