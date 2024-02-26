@@ -20,4 +20,4 @@
          </a>
        </li>
      </ul>`}function b(o){let e=y(m.booksInCart);if(e===null)return;const a=e.filter(n=>n._id!==o);h(m.booksInCart,a),console.log(`The book with id ${o} was remove from cart`)}export{b as a,y as g,k as m,m as r,h as s};
-//# sourceMappingURL=removeBookFromCart-bca3d6fe.js.map
+//# sourceMappingURL=removeBookFromCart-56e2544e.js.map
