@@ -20,7 +20,7 @@ export function markupBasketItem({
     </div>
     <button class="delete-basket-item-btn" data-id="${_id}">
       <svg class="trash-btn-icon" height="16" width="16">
-                <use href="../img/icons.svg#icon-trash"></use>
+                <use href="./img/icons.svg#icon-trash"></use>
               </svg></button>
 </div>
     <p class="descr-basket-item">${description}</p>
