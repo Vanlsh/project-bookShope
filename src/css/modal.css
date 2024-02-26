@@ -67,8 +67,21 @@
   
 }
 
+.img-amazon{
+  width: 62px;
+  height: 19px;
+  margin: 6px 10px 6px 0;
+}
+
+.img-apple-books{
+  width: 33px;
+  height: 32px;
+}
+
 .js-modal-img{
   border-radius: 8px;
+  max-height: 408px;
+  width: 100%;
 }
 
 .icon-close:hover,
@@ -105,10 +118,7 @@
 
 .modal-text {
   margin-top: 18px;
-}
-
-.js-modal-congratulation{
-  
+  margin-bottom: 14px;
 }
 
 
@@ -218,12 +228,12 @@
     letter-spacing: -0.04px;
   }
 
-  .js-modal-img{
-    max-width: 192px;
-  }
-
   .modal-image-title{
     max-width: 250px;
+  }
+
+  .js-modal-img{
+    max-height: 281px;
   }
 }
 
