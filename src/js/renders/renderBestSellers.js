@@ -7,21 +7,6 @@ import { renderLoader } from './renderLoader';
 import { scrollGallery } from '../helpers/scrollGallery';
 
 export async function renderBestSellerBooks() {
-  scrollGallery();
-  renderLoader(refs.gallery);
-  const bestsellers = await getTopBooks();
-  refs.gallery.innerHTML = '';
-  const bestsellersArr = bestsellers.map(markupBestSellersBooks);
-  const bestsellersList = document.createElement('ul');
-  bestsellersList.classList.add('category-books-list');
-
-  bestsellersList.append(...bestsellersArr);
-
-  refs.gallery.append(markupTitle('Best Sellers Books'));
-  refs.gallery.append(bestsellersList);
-}
-
-export async function renderDefaultBestSellerBooks() {
   renderLoader(refs.gallery);
   const bestsellers = await getTopBooks();
   if (bestsellers && bestsellers.length > 0) {
@@ -38,4 +23,23 @@ export async function renderDefaultBestSellerBooks() {
     console.error('No results');
   }
 }
-renderDefaultBestSellerBooks();
+renderBestSellerBooks();
+
+// export async function renderDefaultBestSellerBooks() {
+//   renderLoader(refs.gallery);
+//   const bestsellers = await getTopBooks();
+//   if (bestsellers && bestsellers.length > 0) {
+//     refs.gallery.innerHTML = '';
+//     const bestsellersArr = bestsellers.map(markupBestSellersBooks);
+//     const bestsellersList = document.createElement('ul');
+//     bestsellersList.classList.add('category-books-list');
+
+//     bestsellersList.append(...bestsellersArr);
+
+//     refs.gallery.append(markupTitle('Best Sellers Books'));
+//     refs.gallery.append(bestsellersList);
+//   } else {
+//     console.error('No results');
+//   }
+// }
+// renderDefaultBestSellerBooks();
