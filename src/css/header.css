@@ -88,10 +88,13 @@
   background-color: transparent;
   border: none;
 }
-.header-close-icon {
+.header-close-button {
   display: none;
 }
-.header-close-icon.is-open {
+.is-open .header-open-button {
+  display: none;
+}
+.is-open .header-close-button {
   display: block;
 }
 .header-open-icon,

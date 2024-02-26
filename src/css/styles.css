@@ -7,8 +7,14 @@
 @import url('./common.css');
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./gallery.css');
+@import url('./galleryBestsellers.css');
 @import url('./charitableFunds.css');
+@import url('./basket.css');
+@import url('./shopListLinks.css');
+@import url('./navCategriesList.css');
+@import url('./gallary.css');
+@import url('./scrollButton.css');
+@import url('./modal.css');
 
 :root {
   font-synthesis: none;
