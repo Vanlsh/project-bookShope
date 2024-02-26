@@ -24,17 +24,16 @@
   background-color: var(--background-color);
   padding: 40px 20px;
   border: 2px solid var(--title-color);
-  max-width: 335px;
+  width: 335px;
   border-radius: 18px;
   position: relative;
 }
+
 
 .modal-btn {
   border: 2px solid #4f2ee8;
   border-radius: 40px;
   padding: 14px 25px;
-  width: 211px;
-  height: 46px;
   background-color: transparent;
   display: block;
   margin: 0 auto;
@@ -45,10 +44,10 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.01px;
+  line-height: 1.2;
 }
 
 .modal-btn.clicked{
- width: 279px;
  padding: 14px 20px;
 }
 
@@ -64,6 +63,11 @@
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 8px;
+  
+}
+
+.js-modal-img{
   border-radius: 8px;
 }
 
@@ -88,31 +92,6 @@
   color: var(--modal-gray);
 }
 
-@media screen and (min-width: 768px) {
-  .modal-container {
-    min-width: 579px;
-    min-height: 465px;
-    padding: 40px;
-  }
-  .modal-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-height: 498px) {
-  .modal-wrapper {
-    display: block;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .modal-image {
-    margin-bottom: 0;
-  }
-}
-
 .modal-image-title {
   font-weight: 700;
   font-size: 16px;
@@ -120,42 +99,25 @@
   margin-top: 14px;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-image-title {
-    margin-top: 0;
-    font-size: 24px;
-    line-height: 1.17;
-  }
-}
-
-
-
-@media screen and (min-width: 768px) {
-  .modal-image-description {
-    font-size: 14px;
-    line-height: 1.29;
-    margin-top: 8px;
-  }
+.modal-congratulation.hidden {
+  display: none;
 }
 
 .modal-text {
   margin-top: 18px;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-text {
-    margin-top: 20px;
-  }
+.js-modal-congratulation{
+  
 }
 
 
-
-@media screen and (min-width: 768px) {
-  .modal-btn {
-    width: 100%;
-    margin-top: 40px;
+@media screen and (max-height: 498px) {
+  .modal-wrapper {
+    display: block;
   }
 }
+
 
 .icon-close {
   position: absolute;
@@ -164,19 +126,27 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  stroke: var(--main-fount-color);
   transition: stroke 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .icon-close {
-    top: 24px;
-    right: 24px;
-    width: 28px;
-    height: 28px;
-  }
+.icon-close::before, .icon-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: var(--main-fount-color);
+  border-radius: 2px;
 }
 
+.icon-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -185,18 +155,80 @@
     font-size: 12px;
     line-height: 1.17;
   }
-}
 
-.modal-congratulation.hidden {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
   .modal-box {
     display: flex;
     gap: 24px;
   }
+
   .modal-content {
     max-width: 279px;
   }
+
+  .icon-close {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-btn {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px  145px 20px 145px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  
+  .modal-btn.clicked{
+    padding: 20px 100px 20px 100px;
+  }
+
+  .modal-text {
+    margin-top: 20px;
+  }
+
+  .modal-image {
+    margin-bottom: 0;
+  }
+
+  .modal-image-description {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04px;
+    margin-top: 8px;
+  }
+
+  .modal-container {
+    min-width: 579px;
+    min-height: 465px;
+    padding: 40px;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-image-title {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.04px;
+  }
+
+  .js-modal-img{
+    max-width: 192px;
+  }
+
+  .modal-image-title{
+    max-width: 250px;
+  }
+}
+
+
+@media screen and (min-width: 1422px){
+
+
 }
