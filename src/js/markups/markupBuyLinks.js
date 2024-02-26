@@ -1,4 +1,6 @@
 // Маркап для посилань на amazon та apple books
+import amazonImg from '../../img/amazon.png';
+import appleBooksImg from '../../img/apple-books.png';
 
 export function markupBuyLinks(buy_links) {
   const amazon = buy_links.find(item => item.name === 'Amazon').url;
@@ -7,7 +9,7 @@ export function markupBuyLinks(buy_links) {
     <ul class="links-shop-list">
        <li class="link-shop-item">
          <a class="amazon-link" href="${amazon}" target="_blank" rel="noopener">
-           <img class="img-amazon" src="/src/img/amazon.png" alt="amazon"></img>
+           <img class="img-amazon" src="${amazonImg}" alt="amazon"></img>
          </a>
        </li>
        <li class="link-shop-item">
@@ -19,7 +21,7 @@ export function markupBuyLinks(buy_links) {
          >
            <img
              class="img-apple-books"
-             src="./src/img/apple-books.png"
+             src="${appleBooksImg}"
              alt="apple-books"
            ></img>
          </a>
