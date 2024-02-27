@@ -5,13 +5,13 @@ import { refsShoppingList } from './refsShoppingList';
 import { renderBasketItem } from './renders/renderBasketShList';
 import { getFromLocalStorage } from './localStorageAPI';
 import { refsLS } from './keyConstsLS';
-import { btnClickTrendingPagination, paganation } from './pagination';
+import { btnClickTrendingPagination, pagination } from './pagination';
 
 refsShoppingList.basketShoppingList.addEventListener('click', onDeleteBtn);
 
 function render() {
   const length = getFromLocalStorage(refsLS.booksInCart).length;
-  paganation(length);
+  pagination.reset(length);
   const data = btnClickTrendingPagination(1);
   renderBasketItem(data);
 }
