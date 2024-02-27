@@ -5,7 +5,7 @@ export function markupBookCard(book) {
   return `
 <li class="books-item" data-id=${id}>
 <div class="book-wrapper">
- <img class="book-image" src="${image}" alt="${author} ${title}" />
+ <img class="book-image" src="${image}" alt="${author} ${title}" width="287" height="408" loading="lazy"/>
           <p class="book-image-message-text">QUICK VIEW</p>
 </div>
         <h2 class="book-title">${truncateTextByWord(title)}</h2>
