@@ -1,6 +1,6 @@
-import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
+import { setToLocalStorage, getFromLocalStorage } from '../localStorageAPI';
 
-import { refsLS } from './keyConstsLS';
+import { refsLS } from '../keyConstsLS';
 
 export function removeBookFromCart(bookId) {
   //Get arr from Local Storage
