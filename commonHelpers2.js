@@ -7,7 +7,7 @@ import{b as m,g as n,r,m as d}from"./assets/burgerMenu-b34b7cb6.js";const a={bas
     <h2 class="title-basket-item">${s}</h2>
     <p class="category-basket-item">${i}</p>
     </div>
-    <button class="delete-basket-item-btn" data-id="${t}">
+    <button aria-label="Removing icon" class="delete-basket-item-btn" data-id="${t}">
       <svg class="trash-btn-icon" height="16" width="16">
                 <use href="${b}#icon-trash"></use>
               </svg></button>
