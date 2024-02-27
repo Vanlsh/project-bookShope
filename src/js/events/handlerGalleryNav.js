@@ -1,9 +1,9 @@
-import { renderBestSellerBooks } from './renders/renderBestSellers';
-import { renderCategory } from './renders/renderCategoryBooks';
-import { removeBntNavStyles } from './helpers/removeBntNavStyles';
-import { setToLocalStorage } from './localStorageAPI';
-import { refsLS } from './keyConstsLS';
-import { scrollGallery } from './helpers/scrollGallery';
+import { renderBestSellerBooks } from '../renders/renderBestSellers';
+import { renderCategory } from '../renders/renderCategoryBooks';
+import { removeBntNavStyles } from '../helpers/removeBntNavStyles';
+import { setToLocalStorage } from '../localStorageAPI';
+import { refsLS } from '../keyConstsLS';
+import { scrollGallery } from '../helpers/scrollGallery';
 const { categoryName } = refsLS;
 
 export function handlerGalleryNav(evt) {

@@ -1,6 +1,6 @@
 import { getFromLocalStorage } from '../localStorageAPI';
-import { removeBookFromCart } from '../removeBookFromCart';
-import { addBookToCart } from '../addBookToCart';
+import { removeBookFromCart } from '../helpers/removeBookFromCart';
+import { addBookToCart } from '../helpers/addBookToCart';
 import { refsLS } from '../keyConstsLS';
 import { refs } from '../refs';
 import {

@@ -9,7 +9,7 @@ export function markupBuyLinks(buy_links) {
     <ul class="links-shop-list">
        <li class="link-shop-item">
          <a class="amazon-link" href="${amazon}" target="_blank" rel="noopener">
-           <img class="img-amazon" src="${amazonImg}" alt="amazon"></img>
+           <img class="img-amazon" src="${amazonImg}" width="32" height="11" alt="amazon"></img>
          </a>
        </li>
        <li class="link-shop-item">

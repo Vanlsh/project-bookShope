@@ -1,6 +1,6 @@
-import { setToLocalStorage, getFromLocalStorage } from './localStorageAPI';
-import { refsLS } from './keyConstsLS';
-import { toastSuccess } from './components/toast';
+import { setToLocalStorage, getFromLocalStorage } from '../localStorageAPI';
+import { refsLS } from '../keyConstsLS';
+import { toastSuccess } from '../components/toast';
 
 export function addBookToCart(book) {
   // get array from Local Storage

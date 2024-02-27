@@ -1,5 +1,5 @@
 import { refsShoppingList } from '../refsShoppingList';
-import { removeBookFromCart } from '../removeBookFromCart';
+import { removeBookFromCart } from '../helpers/removeBookFromCart';
 import { getFromLocalStorage } from '../localStorageAPI';
 import { refsLS } from '../keyConstsLS';
 
