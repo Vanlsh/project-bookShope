@@ -12,6 +12,7 @@ import {
   IS_OPEN,
   HIDDEN,
 } from './commonConst';
+import { onCloseModal } from './events/onCloseModal.js';
 
 const {
   modalWrapper,
@@ -25,6 +26,7 @@ const {
 } = refs;
 
 export async function showModal(id) {
+  window.addEventListener('keydown', onCloseModal);
   document.body.style.overflow = 'hidden';
   const data = await getById(id);
   if (!data) {
@@ -47,11 +49,8 @@ export async function showModal(id) {
 
   modalBtn.dataset.id = _id;
   modalBtn.setAttribute('data-type', isInCart ? REMOVE : ADD);
-  if (isInCart) {
-    modalBtn.classList.add('clicked');
-  } else {
-    modalBtn.classList.remove('clicked');
-  }
+  if (isInCart) modalBtn.classList.add('clicked');
+  else modalBtn.classList.remove('clicked');
   modalWrapper.classList.add(IS_OPEN);
 
   if (isInCart) modalCongratulation.classList.remove(HIDDEN);
