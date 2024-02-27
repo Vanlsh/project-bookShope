@@ -19,7 +19,7 @@ export function markupBasketItem({
     <h2 class="title-basket-item">${title}</h2>
     <p class="category-basket-item">${list_name}</p>
     </div>
-    <button class="delete-basket-item-btn" data-id="${_id}">
+    <button aria-label="Removing icon" class="delete-basket-item-btn" data-id="${_id}">
       <svg class="trash-btn-icon" height="16" width="16">
                 <use href="${icon}#icon-trash"></use>
               </svg></button>
