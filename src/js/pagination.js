@@ -1,11 +1,18 @@
 import Pagination from 'tui-pagination'; // Імпорт бібліотеки
 import 'tui-pagination/dist/tui-pagination.css'; // Імпорт CSS стилів
+// import { getFromLocalStorage } from './localStorageAPI';
+import { getFromLocalStorage } from './localStorageAPI';
+import { refsLS } from './keyConstsLS';
 
+// зробити реф
 const paginationDiv = document.getElementById('pagination');
+let data = getFromLocalStorage(refsLS.booksInCart);
 
-const markupPagination = {
-  totalItems: 100,
-  itemsPerPage: 10,
+let totalItems = data.length;
+
+export const markupPagination = {
+  totalItems: totalItems,
+  itemsPerPage: 3,
   visiblePages: 3,
   page: 1,
   centerAlign: false,
@@ -31,15 +38,37 @@ const markupPagination = {
 };
 const pagination = new Pagination(paginationDiv, markupPagination);
 
-// pagination.on('beforeMove', evt => {
-//   const { page } = evt;
-//   const result = ajax.call({ page });
+// Поточна сторінка, зараз вона 1
+let currentPage = pagination.getCurrentPage();
+console.log(currentPage);
 
-//   if (result) {
-//     pagination.movePageTo(page);
-//   } else {
-//     return false;
-//   }
+// Перейти до певної сторінки, перемалювати список, (цільова сторінка)
+// let pageTo = pagination.movePageTo(targetPage);
+// console.log(pageTo);
+
+//  скинути нумерацію сторінок, (перемалювати кількість елементів сторінки)
+// let reset = pagination.reset(totalItems);
+// pagination.reset();
+// pagination.reset(100);
+
+// Встановити кількість елементів на сторінці, (кількість предметів)
+let itemBooks = pagination.setItemsPerPage(3);
+console.log(itemBooks);
+// Встановити загальну кількість елементів, (заг кількість елементів)
+// let totalItemBooks = setTotalItems(itemCount);
+
+// page - перенесена сторінка
+// pagination.on('afterMove', event => {
+//   const currentPage = event.page;
+//   console.log(currentPage);
 // });
 
-// pagination.on('afterMove', ({ page }) => console.log(page));
+// page - перенесена сторінка
+// paganation.on('beforeMove', event => {
+//   const currentPage = event.page;
+
+//   if (currentPage === 10) {
+//     return false;
+//     // return true;
+//   }
+// });
