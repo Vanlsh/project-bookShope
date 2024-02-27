@@ -16,6 +16,14 @@
   pointer-events: auto;
 }
 
+.icon-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
 .modal {
   margin: 10px auto;
 }
@@ -67,7 +75,7 @@
 
 .js-modal-img {
   border-radius: 8px;
-  max-height: 408px;
+  height: 408px;
   width: 100%;
 }
 
@@ -121,8 +129,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px; 
-  height: 2px; 
+  width: 20px;
+  height: 2px;
   background-color: var(--main-fount-color);
   border-radius: 2px;
   transition: width 0.3s ease, height 0.3s ease;
@@ -140,16 +148,13 @@
 .icon-close:hover::after {
   width: 24px;
   height: 2px;
-  background-color: var(--violet-color); 
+  background-color: var(--violet-color);
 }
 
 .icon-close:active::before,
 .icon-close:active::after {
   background-color: var(--violet-color);
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .modal-congratulation {
@@ -225,8 +230,8 @@
   }
 
   .js-modal-img {
-    max-width: 192px;
-    max-height: 281px;
+    width: 192px;
+    height: 281px;
   }
 }
 
