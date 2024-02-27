@@ -12,7 +12,7 @@ export function markupBasketItem({
 }) {
   return `
     <li class="basket-item">
-      <img class="basket-item-img" src="${book_image}" alt="${title}"/>
+      <img class="basket-item-img" src="${book_image}" alt="${title}" width="100" height="142" loading="lazy"/>
       <div class="basket-item-info">
 <div class="first-item-part">
     <div class="title-category-container">
