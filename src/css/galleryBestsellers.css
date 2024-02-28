@@ -91,7 +91,6 @@
 
 .category-button {
   align-items: center;
-  width: 124px;
   color: var(--main-fount-color);
   background-color: var(--background-color);
   display: flex;
