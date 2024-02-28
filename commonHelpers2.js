@@ -1,22 +1,22 @@
-import{b as m,g as n,r,m as d}from"./assets/restGallary-0989b75a.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn")};function p(t){const e=t.target.closest("button");if(!e)return;m(e.dataset.id),t.target.closest("li").remove();let i=n(r.booksInCart);(!i||!i.length)&&a.emptyCardContainer.classList.remove("none")}const b="/project-bookShope/assets/icons-074a4c48.svg";function k({_id:t,book_image:e,title:s,list_name:i,description:o,author:c,buy_links:l}){return`
+import{m,g as r,r as c,b as u}from"./assets/restGallary-0989b75a.js";import{P as b}from"./assets/vendor-d8b4b001.js";const a={basketShoppingList:document.querySelector(".js-basket-list"),emptyCardContainer:document.querySelector(".js-background-container"),deleteBtn:document.querySelectorAll(".delete-basket-item-btn"),paginationDiv:document.getElementById("pagination")},h="/project-bookShope/assets/icons-074a4c48.svg";function v({_id:t,book_image:e,title:i,list_name:s,description:o,author:l,buy_links:g}){return`
     <li class="basket-item">
-      <img class="basket-item-img" src="${e}" alt="${s}" width="100" height="142" loading="lazy"/>
+      <img class="basket-item-img" src="${e}" alt="${i}" width="100" height="142" loading="lazy"/>
       <div class="basket-item-info">
 <div class="first-item-part">
     <div class="title-category-container">
-    <h2 class="title-basket-item">${s}</h2>
-    <p class="category-basket-item">${i}</p>
+    <h2 class="title-basket-item">${i}</h2>
+    <p class="category-basket-item">${s}</p>
     </div>
     <button aria-label="Removing icon" class="delete-basket-item-btn" data-id="${t}">
       <svg class="trash-btn-icon" height="16" width="16">
-                <use href="${b}#icon-trash"></use>
+                <use href="${h}#icon-trash"></use>
               </svg></button>
 </div>
     <p class="descr-basket-item">${o}</p>
     <div class="last-item-part">
-    <p class="author-basket-item">${c}</p>
-${d(l)}
+    <p class="author-basket-item">${l}</p>
+${m(g)}
      </div>
      </div>
-    </li>`}function g(){a.basketShoppingList.innerHTML="";let t=n(r.booksInCart);if(!t||!t.length){a.emptyCardContainer.classList.remove("none");return}const s=t.map(k).join("");a.basketShoppingList.innerHTML=s}g();a.basketShoppingList.addEventListener("click",p);
+    </li>`}function p(t){if(a.basketShoppingList.innerHTML="",a.paginationDiv.classList.add("visually-hidden"),!t||!t.length){a.emptyCardContainer.classList.remove("none");return}const i=t.map(v).join("");a.basketShoppingList.innerHTML=i,a.paginationDiv.classList.remove("visually-hidden")}const k={itemsPerPage:3,visiblePages:3,centerAlign:!1,firstItemClassName:"tui-first-child",lastItemClassName:"tui-last-child",template:{page:'<a href="#" class="tui-page-btn">{{page}}</a>',currentPage:'<strong class="tui-page-btn tui-is-selected">{{page}}</strong>',moveButton:'<a href="#" class="tui-page-btn tui-{{type}}"><span class="tui-ico-{{type}}">{{type}}</span></a>',disabledMoveButton:'<span class="tui-page-btn tui-is-disabled tui-{{type}}"><span class="tui-ico-{{type}}">{{type}}</span></span>',moreButton:'<a href="#" class="tui-page-btn tui-{{type}}-is-ellip"><span class="tui-ico-ellip">...</span></a>'}},n=new b(a.paginationDiv,k);n.on("afterMove",t=>{const e=d(t.page);p(e)});function d(t){const i=(t-1)*3,s=i+3;return r(c.booksInCart).slice(i,s)}function y(t){const e=t.target.closest("button");if(!e)return;u(e.dataset.id),t.target.closest("li").remove();let s=r(c.booksInCart);if(console.log(s.length),!s||!s.length){a.paginationDiv.classList.add("visually-hidden"),p();return}n.reset(s.length);const l=Math.ceil(s.length/3);n.movePageTo(l),s.length<=3&&a.paginationDiv.classList.add("visually-hidden")}a.basketShoppingList.addEventListener("click",y);function f(){const t=r(c.booksInCart).length;n.reset(t);const e=d(1);p(e),t<=3&&a.paginationDiv.classList.add("visually-hidden")}f();
 //# sourceMappingURL=commonHelpers2.js.map
