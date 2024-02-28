@@ -28,6 +28,10 @@
   --hover-shadow: var(--hover-dark-filter-shadow);
   --empty-color: var(--dark-empty-color);
   --modal-gray: rgba(255, 255, 255, 0.5);
+  --button-background-color: var(--black-color);
+  --button-ellip-color: var(--white-color);
+  --button-number-color: var(--white-color);
+  --button-hover: var(--black-color);
 }
 .light {
   --background-color: var(--white-background-color);
@@ -39,6 +43,10 @@
   --hover-shadow: var(--hover-light-filter-shadow);
   --empty-color: var(--light-empty-color);
   --modal-gray: rgba(17, 17, 17, 0.5);
+  --button-background-color: var(--dark-color);
+  --button-ellip-color: var(--light-gray-color);
+  --button-number-color: var(--black-color);
+  --button-hover: var(--white-color);
 }
 
 body {
