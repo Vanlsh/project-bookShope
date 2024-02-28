@@ -8,7 +8,6 @@ body {
 }
 .basket-container {
   flex: 1;
-  margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -44,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 40px;
 }
 .basket-item {
   width: 335px;
@@ -75,7 +75,7 @@ body {
   gap: 4px;
 }
 .title-basket-item {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: var(--title-color);
