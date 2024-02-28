@@ -2,7 +2,6 @@ import { refs } from '../refs';
 
 export function scrollGallery() {
   if (window.innerWidth >= 1422) {
-    console.log(window.innerWidth);
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
