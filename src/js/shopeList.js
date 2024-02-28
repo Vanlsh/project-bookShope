@@ -14,6 +14,9 @@ function render() {
   pagination.reset(length);
   const data = btnClickTrendingPagination(1);
   renderBasketItem(data);
+  if (length <= 3) {
+    refsShoppingList.paginationDiv.classList.add('visually-hidden');
+  }
 }
 
 render();
