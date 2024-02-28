@@ -6,7 +6,7 @@ export function markupBestSellersBooks({ list_name, books }) {
   const categoryItem = document.createElement('li');
   categoryItem.classList.add('category-books-item');
 
-  const categoryTitle = document.createElement('h3');
+  const categoryTitle = document.createElement('h2');
   categoryTitle.classList.add('category-title');
   categoryTitle.textContent = list_name;
 

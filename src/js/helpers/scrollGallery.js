@@ -6,11 +6,14 @@ export function scrollGallery() {
       top: 0,
       behavior: 'smooth',
     });
-  } else {
-    refs.gallery.style.minHeight = window.innerHeight + 'px';
-    refs.gallery.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    return;
   }
+  refs.gallery.style.minHeight = window.innerHeight + 'px';
+  const top =
+    refs.gallery.getBoundingClientRect().top + window.scrollY ||
+    window.pageYOffSet;
+  window.scrollTo({
+    top,
+    behavior: 'smooth',
+  });
 }

@@ -14,5 +14,4 @@ export function removeBookFromCart(bookId) {
 
   //Update data in Local Storage
   setToLocalStorage(refsLS.booksInCart, newBook);
-  console.log(`The book with id ${bookId} was remove from cart`);
 }

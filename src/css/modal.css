@@ -16,6 +16,14 @@
   pointer-events: auto;
 }
 
+.icon-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
 .modal {
   margin: 10px auto;
 }
@@ -67,7 +75,7 @@
 
 .js-modal-img {
   border-radius: 8px;
-  max-height: 408px;
+  height: 408px;
   width: 100%;
 }
 
@@ -115,16 +123,6 @@
   }
 }
 
-.icon-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  transition: stroke 0.3s ease;
-}
-
 .icon-close::before,
 .icon-close::after {
   content: '';
@@ -135,6 +133,7 @@
   height: 2px;
   background-color: var(--main-fount-color);
   border-radius: 2px;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .icon-close::before {
@@ -143,6 +142,18 @@
 
 .icon-close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.icon-close:hover::before,
+.icon-close:hover::after {
+  width: 24px;
+  height: 2px;
+  background-color: var(--violet-color);
+}
+
+.icon-close:active::before,
+.icon-close:active::after {
+  background-color: var(--violet-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -219,8 +230,8 @@
   }
 
   .js-modal-img {
-    max-width: 192px;
-    max-height: 281px;
+    width: 192px;
+    height: 281px;
   }
 }
 

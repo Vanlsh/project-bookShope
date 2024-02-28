@@ -1,22 +1,12 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./common.css');
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./galleryBestsellers.css');
 @import url('./charitableFunds.css');
-@import url('./shopListLinks.css');
-@import url('./navCategriesList.css');
-@import url('./gallary.css');
 @import url('./scrollButton.css');
-@import url('./modal.css');
+@import url('./basket.css');
 @import url('./loader.css');
 @import url('./burgerMenu.css');
-@import url('./pagination.css');
+@import url('./shopListLinks.css');
 
 :root {
   font-synthesis: none;
