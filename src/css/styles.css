@@ -17,6 +17,7 @@
 @import url('./modal.css');
 @import url('./loader.css');
 @import url('./burgerMenu.css');
+@import url('./pagination.css');
 
 :root {
   font-synthesis: none;

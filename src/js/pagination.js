@@ -2,13 +2,14 @@ import Pagination from 'tui-pagination'; // Імпорт бібліотеки
 import 'tui-pagination/dist/tui-pagination.css'; // Імпорт CSS стилів
 import { getFromLocalStorage } from './localStorageAPI';
 import { refsLS } from './keyConstsLS';
+import { refsShoppingList } from './refsShoppingList';
 import { renderBasketItem } from './renders/renderBasketShList';
 import { options } from './optionsPagination';
 
-// зробити реф
-const paginationDiv = document.getElementById('pagination');
-
-export const pagination = new Pagination(paginationDiv, options);
+export const pagination = new Pagination(
+  refsShoppingList.paginationDiv,
+  options
+);
 
 pagination.on('afterMove', event => {
   const data = btnClickTrendingPagination(event.page);

@@ -1,0 +1,104 @@
+#pagination.tui-pagination {
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #pagination.tui-pagination.none {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+#pagination.tui-pagination .tui-page-btn {
+  padding: auto;
+  height: 38px;
+  width: 38px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-fount-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--button-number-color);
+}
+
+#pagination.tui-pagination .tui-first {
+  margin-right: 5px;
+}
+
+#pagination.tui-pagination .tui-prev {
+  margin-right: 14px;
+}
+
+#pagination.tui-pagination .tui-ico-ellip {
+  color: var(--main-fount-color);
+}
+
+#pagination.tui-pagination .tui-first,
+#pagination.tui-pagination .tui-prev {
+  background-color: var(--button-background-color);
+}
+
+#pagination.tui-pagination .tui-is-selected,
+#pagination.tui-pagination strong {
+  color: var(--button-hover);
+  background: var(--title-color);
+}
+
+#pagination.tui-pagination .tui-is-disabled .tui-ico-first,
+#pagination.tui-pagination .tui-is-disabled .tui-ico-prev {
+  color: var(--button-ellip-color);
+}
+
+#pagination.tui-pagination .tui-ico-next,
+#pagination.tui-pagination .tui-ico-last {
+  color: var(--black-color);
+}
+
+#pagination.tui-pagination .tui-page-btn.tui-next {
+  background-color: var(--gold-color);
+  margin-left: 14px;
+}
+
+#pagination.tui-pagination .tui-page-btn.tui-last {
+  background-color: var(--gold-color);
+  margin: 0;
+}
+
+#pagination.tui-pagination .tui-page-btn.tui-last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #pagination.tui-pagination {
+    margin: 40px auto 40px;
+  }
+  #pagination.tui-pagination .tui-page-btn {
+    height: 44px;
+    width: 44px;
+    margin-right: 10px;
+  }
+  #pagination.tui-pagination .tui-first {
+    margin-right: 8px;
+  }
+
+  #pagination.tui-pagination .tui-prev {
+    margin-right: 24px;
+  }
+
+  #pagination.tui-pagination .tui-page-btn.tui-next {
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+}

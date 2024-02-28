@@ -14,7 +14,8 @@ export function onDeleteBtn(event) {
   let data = getFromLocalStorage(refsLS.booksInCart);
   const isCardEmpty = !data || !data.length;
   if (isCardEmpty) {
-    refsShoppingList.emptyCardContainer.classList.remove('none');
+    // refsShoppingList.paginationDiv.innerHTML = '';
+    // refsShoppingList.emptyCardContainer.classList.add('is-hidden');
 
     return;
   }
