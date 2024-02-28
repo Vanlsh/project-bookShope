@@ -2,15 +2,19 @@ import { refs } from '../refs';
 
 export function scrollGallery() {
   if (window.innerWidth >= 1422) {
+    console.log(window.innerWidth);
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-  } else {
-    refs.gallery.style.minHeight = window.innerHeight + 'px';
-    refs.gallery.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    return;
   }
+  refs.gallery.style.minHeight = window.innerHeight + 'px';
+  const top =
+    refs.gallery.getBoundingClientRect().top + window.scrollY ||
+    window.pageYOffSet;
+  window.scrollTo({
+    top,
+    behavior: 'smooth',
+  });
 }
