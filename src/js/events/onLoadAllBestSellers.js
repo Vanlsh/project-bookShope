@@ -4,6 +4,7 @@ import { renderCategory } from '../renders/renderCategoryBooks';
 import { refsLS } from '../keyConstsLS';
 const { categoryName } = refsLS;
 import { refs } from '../refs';
+import { bookCounter } from '../bookCounter';
 const { btnAllCategories } = refs;
 
 export function onLoadAllBestSelBooks() {
@@ -15,4 +16,6 @@ export function onLoadAllBestSelBooks() {
   } else {
     renderCategory(getCategoryName);
   }
+  //Calculating books in Cart
+  bookCounter();
 }

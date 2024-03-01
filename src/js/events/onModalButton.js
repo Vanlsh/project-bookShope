@@ -10,9 +10,13 @@ import {
   TEXT_MODAL_BUTTON_ADD,
   TEXT_MODAL_BUTTON_REMOVE,
 } from '../commonConst';
+import { bookCounter } from '../bookCounter';
 
 export function onModalButton(e) {
   const { type, id } = e.target.dataset;
+  console.log(e.target.dataset);
+  console.log(type);
+  console.log(id);
   if (type === ADD) {
     addBookToCart(getFromLocalStorage(refsLS.categoryOpenInModal));
     e.target.setAttribute('data-type', REMOVE);
@@ -26,4 +30,6 @@ export function onModalButton(e) {
     refs.modalCongratulation.classList.add(HIDDEN);
     refs.modalBtn.classList.remove('clicked');
   }
+  //Calculating books in Cart
+  bookCounter();
 }

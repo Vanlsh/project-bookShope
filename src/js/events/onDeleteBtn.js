@@ -4,6 +4,7 @@ import { getFromLocalStorage } from '../localStorageAPI';
 import { refsLS } from '../keyConstsLS';
 import { pagination } from '../pagination';
 import { renderBasketItem } from '../renders/renderBasketShList';
+import { bookCounter } from '../bookCounter';
 
 export function onDeleteBtn(event) {
   const deleteButton = event.target.closest('button');
@@ -11,6 +12,9 @@ export function onDeleteBtn(event) {
     return;
   }
   removeBookFromCart(deleteButton.dataset.id);
+  //Calculating books in Cart
+  bookCounter();
+  //
   const listItem = event.target.closest('li');
   listItem.remove();
   let data = getFromLocalStorage(refsLS.booksInCart);

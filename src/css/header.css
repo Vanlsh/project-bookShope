@@ -122,8 +122,6 @@
   .header-cart-icon {
     fill: var(--main-fount-color);
   }
-  .header-navigation-item {
-  }
   .header-navigation-item a {
     display: flex;
     align-items: center;
