@@ -80,6 +80,10 @@
   display: flex;
   align-items: center;
 }
+/* .header-navigation-item:hover {
+    background-color: var(--gold-color);
+    border-radius: 36px;
+  } */
 .header-btns-wrapper {
   display: flex;
   align-items: center;

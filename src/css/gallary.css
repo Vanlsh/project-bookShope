@@ -4,6 +4,11 @@
 
 .selected-category-list .books-item {
   display: block;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.selected-category-list .books-item:hover {
+  transform: scale(1.05);
 }
 
 .selected-category-list {
