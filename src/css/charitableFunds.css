@@ -101,6 +101,13 @@
   .charity-container {
     margin-bottom: 24px;
   }
+  .charity-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .charity-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 
   .charity-btn {
     width: 38px;

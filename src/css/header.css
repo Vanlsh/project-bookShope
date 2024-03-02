@@ -80,10 +80,6 @@
   display: flex;
   align-items: center;
 }
-/* .header-navigation-item:hover {
-    background-color: var(--gold-color);
-    border-radius: 36px;
-  } */
 .header-btns-wrapper {
   display: flex;
   align-items: center;
@@ -137,6 +133,17 @@
   .home .header-navigation-item:first-child a {
     color: var(--dark-color);
     background-color: var(--gold-color);
+  }
+  .header-navigation-item:first-child:hover {
+    background-color: var(--gold-color);
+    border-radius: 36px;
+  }
+  .header-navigation-item:nth-child(2):hover {
+    background-color: var(--gold-color);
+    border-radius: 36px;
+  }
+  .header-navigation-item:nth-child(3) {
+    margin-left: 5px;
   }
   .shop-list-page .header-navigation-item:nth-child(2) a {
     color: var(--dark-color);

@@ -33,6 +33,10 @@
   /* text-transform: uppercase; */
 }
 
+.shop-navigation-list > li > button:focus {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .shop-navigation-list {
     height: 472px;
