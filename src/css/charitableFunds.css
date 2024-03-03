@@ -103,8 +103,8 @@
   }
   .charity-logo {
     transition: transform 0.3s ease;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); /* Виправлення властивості box-shadow */
-    border-radius: 10px; /* Радіуси кутів */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
   }
   .charity-logo:hover {
     transform: scale(1.05);
