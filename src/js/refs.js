@@ -27,5 +27,5 @@ export const refs = {
   burgerList: document.querySelector('.js-burger-list'),
   themeSwitcher: document.querySelector('.header-input'),
   body: document.body,
-  bookCounter: document.querySelector('.header-cart-counter'),
+  bookCounters: document.querySelectorAll('.header-cart-counter'),
 };

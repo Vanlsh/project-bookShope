@@ -84,6 +84,21 @@
   display: flex;
   align-items: center;
 }
+.header-btns-wrapper .header-icon-counter-container {
+  margin-right: 20px;
+}
+.header-icon-counter-container {
+  position: relative;
+  display: inline-block;
+}
+.header-cart-counter {
+  position: absolute;
+  top: -4px;
+  right: -12px;
+}
+.header-cart-icon {
+  fill: var(--main-fount-color);
+}
 .header-open-button,
 .header-close-button {
   background-color: transparent;
@@ -119,8 +134,8 @@
   .header-navigation-list {
     display: flex;
   }
-  .header-cart-icon {
-    fill: var(--main-fount-color);
+  .header-btns-wrapper .header-icon-counter-container {
+    display: none;
   }
   .header-navigation-item a {
     display: flex;

@@ -3,12 +3,15 @@ import { refs } from './refs';
 import { getFromLocalStorage } from './localStorageAPI';
 
 export function bookCounter() {
-  const booksInLS = getFromLocalStorage(refsLS.booksInCart).length;
-  console.log(booksInLS);
-  if (booksInLS > 0) {
-    refs.bookCounter.classList.remove('visually-hidden');
-    refs.bookCounter.innerText = booksInLS;
+  const booksInLS = getFromLocalStorage(refsLS.booksInCart);
+  if (booksInLS !== null && booksInLS.length > 0) {
+    refs.bookCounters.forEach(bookCounter => {
+      bookCounter.classList.remove('visually-hidden');
+      bookCounter.innerText = booksInLS.length;
+    });
   } else {
-    refs.bookCounter.classList.add('visually-hidden');
+    refs.bookCounters.forEach(bookCounter => {
+      bookCounter.classList.add('visually-hidden');
+    });
   }
 }
