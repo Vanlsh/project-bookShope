@@ -97,11 +97,15 @@
   position: absolute;
   top: -8px;
   right: -12px;
-  height: inherit;
   width: 20px;
   border-radius: 50%;
   background-color: var(--violet-color);
   color: var(--white-color);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .header-cart-icon {
   fill: var(--main-fount-color);
