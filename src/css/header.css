@@ -75,6 +75,7 @@
 }
 .header-navigation-list {
   display: none;
+  gap: 10px;
 }
 .header-navigation-item {
   display: flex;
