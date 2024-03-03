@@ -86,9 +86,7 @@
   align-items: center;
   gap: 25px;
 }
-/* .header-btns-wrapper .header-icon-counter-container {
-  margin-right: 20px;
-} */
+
 .header-icon-counter-container {
   position: relative;
   display: inline-block;
