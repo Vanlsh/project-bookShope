@@ -1,12 +1,16 @@
 <link rel="stylesheet" href="../css/loginWindow.css" />
-<div>
-  <button></button>
-  <form action="">
+<div class="login-wraper login-is-open">
+  <form action="" class="login-form">
+    <button class="login-form-close">
+      <svg class="login-close-icon" width="20" height="20">
+        <use href="../img/icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
     <input type="text" />
     <input type="email" />
     <input type="password" />
-    <button></button>
-    <input type="radio" name="login-switch" id="" />
-    <input type="radio" name="login-switch" id="" />
+    <button class="login-form-submit"></button>
+    <input class="login-form-switch" type="radio" name="login-switch" id="" />
+    <input class="login-form-switch" type="radio" name="login-switch" id="" />
   </form>
 </div>
