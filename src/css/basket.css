@@ -161,7 +161,7 @@ body {
   }
 
   .basket-item {
-    width: 704px;
+    max-width: 704px;
     height: 213px;
     padding: 24px;
   }
@@ -212,7 +212,7 @@ body {
   }
 
   .basket-item {
-    width: 996px;
+    max-width: 996px;
   }
 
   .descr-basket-item {
