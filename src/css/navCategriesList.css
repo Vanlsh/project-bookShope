@@ -11,6 +11,10 @@
 }
 
 .shop-navigation-list > li > button {
+  max-width: 335px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   border: none;
   background-color: transparent;
   outline: none;
@@ -30,6 +34,10 @@
 .shop-navigation-list > li > button:hover {
   font-weight: 700;
   color: var(--hover-color);
+  text-transform: uppercase;
+}
+
+.shop-navigation-list > li > button:focus {
   text-transform: uppercase;
 }
 

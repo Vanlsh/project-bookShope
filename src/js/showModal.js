@@ -52,6 +52,5 @@ export async function showModal(id) {
   if (isInCart) modalBtn.classList.add('clicked');
   else modalBtn.classList.remove('clicked');
   modalWrapper.classList.add(IS_OPEN);
-
   if (isInCart) modalCongratulation.classList.remove(HIDDEN);
 }

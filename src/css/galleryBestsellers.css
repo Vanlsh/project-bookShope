@@ -34,6 +34,11 @@
 
 .books-item {
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.books-item:hover {
+  transform: scale(1.05);
 }
 
 .book-wrapper {
